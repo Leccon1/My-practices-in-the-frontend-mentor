@@ -5,4 +5,12 @@
 
 body {
 	background-color: var(--yellow);
+	color: var(--gray-950);
+	font-family: 'Figtree';
+	line-height: 150%;
+}
+
+a {
+	text-decoration: none;
+	color: var(--gray-950);
 }
