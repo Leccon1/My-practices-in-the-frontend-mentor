@@ -1,0 +1,37 @@
+.social-link {
+	background-color: var(--grey-800);
+  border-radius: 10px;
+	&__body {
+		display: grid;
+		justify-items: center;
+	}
+	&__avatar {
+		width: 80px;
+		border-radius: 100%;
+	}
+	&__name {
+    font-size: 22px;
+		font-weight: 700;
+    padding-top: 20px;
+	}
+	&__residence {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 0px 25px 0px;
+	}
+	&__description {
+    font-size: 13px;
+	}
+	&__menu {
+	}
+	&__menu-list {
+	}
+	&__menu-item {
+	}
+	&__menu-link {
+	}
+}
+.content-padding {
+	padding: 30px;
+}

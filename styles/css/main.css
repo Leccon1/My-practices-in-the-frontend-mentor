@@ -8,21 +8,21 @@
 
 @font-face {
   font-family: "inter";
-  src: url(./assets/fonts/static/Inter-Bold.ttf);
+  src: url(../../assets/fonts/static/Inter-Bold.ttf);
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "inter";
-  src: url(./assets/fonts/static/Inter-Regular.ttf);
+  src: url(../../assets/fonts/static/Inter-Regular.ttf);
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "inter";
-  src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+  src: url(../../assets/fonts/static/Inter-SemiBold.ttf);
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -35,8 +35,7 @@
 body {
   background-color: var(--grey-900);
   color: var(--white);
-  font-family: "inter";
-  font-size: 14px;
+  font-family: inter;
 }
 
 img {
@@ -59,10 +58,31 @@ a {
   justify-content: center;
 }
 
-.social-link__body {
+.social-link {
   background-color: var(--grey-800);
+  border-radius: 10px;
+}
+.social-link__body {
   display: grid;
   justify-items: center;
+}
+.social-link__avatar {
+  width: 80px;
+  border-radius: 100%;
+}
+.social-link__name {
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+.social-link__residence {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 0px 25px 0px;
+}
+.social-link__description {
+  font-size: 13px;
 }
 .content-padding {
   padding: 30px;
