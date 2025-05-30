@@ -1,0 +1,16 @@
+.attribution {
+	max-width: 300px;
+	margin: 0 auto;
+	margin-top: 50px;
+
+	background-color: var(--white);
+	border: 1px solid rgb(17, 17, 17);
+	border-radius: 20px;
+	box-shadow: 8px 8px 0px 0px rgb(0, 0, 0);
+
+	&__text {
+		font-size: 16px;
+		text-align: left;
+		color: hsl(228, 45%, 44%);
+	}
+}
