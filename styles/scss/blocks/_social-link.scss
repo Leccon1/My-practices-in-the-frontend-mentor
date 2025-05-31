@@ -37,12 +37,17 @@
 	}
 	&__menu-item {
 		background-color: var(--grey-700);
-		width: 260px;
+		width: 280px;
 		height: 40px;
 		border-radius: 5px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transition-duration: var(--duration);
+	}
+	&__menu-item:hover {
+		background-color: var(--green);
+		color: var(--grey-900);
 	}
 }
 .content-padding {
