@@ -59,6 +59,7 @@ a {
 }
 
 .social-link {
+  width: 340px;
   background-color: var(--grey-800);
   border-radius: 10px;
 }
@@ -84,6 +85,27 @@ a {
 .social-link__description {
   font-size: 13px;
 }
+.social-link__menu-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.social-link__menu-link {
+  display: inline-block;
+  width: 100%;
+  color: var(--white);
+}
+.social-link__menu-item {
+  background-color: var(--grey-700);
+  width: 260px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .content-padding {
   padding: 30px;
 }
