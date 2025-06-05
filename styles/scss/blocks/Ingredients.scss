@@ -1,0 +1,17 @@
+@use '../helpers/' as *;
+
+.ingredients {
+	&__body {
+		padding-bottom: 25px;
+
+		@include hr;
+	}
+	&__list {
+		::marker {
+			color: var(--Brown-800);
+		}
+		list-style-type: square;
+	}
+	&__list-item {
+	}
+}

@@ -1,0 +1,8 @@
+@use 'base';
+@use 'fonts';
+@use 'variables';
+@use 'normalize';
+
+@use './blocks/header.scss';
+@use './blocks/preparation-time.scss';
+@use './blocks/Ingredients.scss';
