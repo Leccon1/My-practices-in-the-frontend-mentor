@@ -3,7 +3,7 @@
 body {
 	background-color: var(--Stone-100);
 	color: var(--Stone-600);
-	font-family: Outfit;
+	font-family: var(--base-font);
 	font-size: 16px;
 	font-weight: var(--fw-regular);
 }
@@ -32,7 +32,7 @@ h3 {
 
 h1,
 h2 {
-	font-family: 'YoungSerif';
+	font-family: var(--alt-font);
 }
 
 a {

@@ -4,9 +4,17 @@
 	margin: 0 auto;
 }
 
+.__body-margin-botton {
+	padding-bottom: 25px;
+}
+
 .title {
 	font-weight: var(--fw-regular);
 	letter-spacing: 0.9px;
+}
+
+.title-margin {
+	margin-bottom: 20px;
 }
 
 .bold {

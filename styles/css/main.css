@@ -5,9 +5,17 @@
   margin: 0 auto;
 }
 
+.__body-margin-botton {
+  padding-bottom: 25px;
+}
+
 .title {
   font-weight: var(--fw-regular);
   letter-spacing: 0.9px;
+}
+
+.title-margin {
+  margin-bottom: 20px;
 }
 
 .bold {
@@ -25,7 +33,7 @@
 body {
   background-color: var(--Stone-100);
   color: var(--Stone-600);
-  font-family: Outfit;
+  font-family: var(--base-font);
   font-size: 16px;
   font-weight: var(--fw-regular);
 }
@@ -54,7 +62,7 @@ h3 {
 
 h1,
 h2 {
-  font-family: "YoungSerif";
+  font-family: var(--alt-font);
 }
 
 a {
@@ -116,6 +124,8 @@ svg * {
   --Brown-800: hsl(14, 45%, 36%);
   --Rose-800: hsl(332, 51%, 32%);
   --Rose-50: hsl(330, 100%, 98%);
+  --base-font: "Outfit";
+  --alt-font: "YoungSerif";
   --fw-bold: 700;
   --fw-semiBold: 600;
   --fw-regular: 400;
@@ -123,6 +133,11 @@ svg * {
 }
 
 /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -215,14 +230,23 @@ select:focus {
 }
 
 .ingredients__body {
-  padding-bottom: 25px;
-  border-bottom: 1px solid var(--Stone-100);
+  border-bottom: 1px solid var(--Stone-150);
 }
 .ingredients__list {
   list-style-type: square;
 }
 .ingredients__list ::marker {
   color: var(--Brown-800);
+}
+
+.instructions__body {
+  margin-top: 25px;
+  border-bottom: 1px solid var(--Stone-150);
+}
+.instructions__list ::marker {
+  color: var(--Brown-800);
+  font-family: var(--base-font);
+  font-weight: var(--fw-semiBold);
 }
 
 /*# sourceMappingURL=main.css.map */
