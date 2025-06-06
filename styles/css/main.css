@@ -9,6 +9,10 @@
   padding-bottom: 25px;
 }
 
+.hr {
+  border-bottom: 1px solid var(--Stone-150);
+}
+
 .title {
   font-weight: var(--fw-regular);
   letter-spacing: 0.9px;
@@ -229,9 +233,6 @@ select:focus {
   color: var(--Rose-800);
 }
 
-.ingredients__body {
-  border-bottom: 1px solid var(--Stone-150);
-}
 .ingredients__list {
   list-style-type: square;
 }
@@ -241,12 +242,30 @@ select:focus {
 
 .instructions__body {
   margin-top: 25px;
-  border-bottom: 1px solid var(--Stone-150);
 }
 .instructions__list ::marker {
   color: var(--Brown-800);
   font-family: var(--base-font);
   font-weight: var(--fw-semiBold);
+}
+
+.nutrition__body {
+  margin-top: 25px;
+}
+.nutrition__p {
+  margin-bottom: 20px;
+}
+.nutrition .nutrition__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutrition .nutrition__line-title {
+  padding: 15px 0px 15px 20px;
+}
+.nutrition .nutrition__line-value {
+  color: var(--Brown-800);
+  font-weight: var(--fw-semiBold);
+  padding: 15px 20px 15px 0px;
 }
 
 /*# sourceMappingURL=main.css.map */
