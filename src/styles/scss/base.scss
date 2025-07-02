@@ -7,4 +7,8 @@ body {
 	font-family: var(--font-family);
 	font-size: var(--font-size);
 	color: var(--grey-500);
+
+	@include mobile {
+		width: 320px;
+	}
 }

@@ -2,16 +2,19 @@
 
 .main {
 	.features {
-		padding: 60px 20px;
 		display: flex;
 		justify-content: center;
 		&__container {
 			display: grid;
-			grid-template-columns: repeat(3, 350px);
-			grid-template-rows: repeat(3, 110px);
+			grid-template-columns: 345px;
+			grid-template-rows: repeat(3, 125px);
 			gap: 30px;
 			max-width: 1100px;
 			position: relative;
+
+			@include mobile {
+				display: block;
+			}
 		}
 		&__card {
 			height: 250px;
@@ -22,6 +25,9 @@
 			text-align: left;
 			position: relative;
 
+			@include mobile {
+				margin-bottom: 30px;
+			}
 			&-title {
 				margin-bottom: 10px;
 			}
