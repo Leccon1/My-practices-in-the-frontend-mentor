@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 body {
+  background-color: #f8f9fc;
   width: 1500px;
   margin: 0 auto;
   font-family: var(--font-family);
@@ -42,6 +43,60 @@ body {
 .header__suptitle {
   width: 500px;
   text-align: center;
+}
+
+.main .features {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+.main .features__container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(3, 110px);
+  gap: 30px;
+  max-width: 1100px;
+  position: relative;
+}
+.main .features__card {
+  height: 250px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  text-align: left;
+  position: relative;
+}
+.main .features__card-title {
+  margin-bottom: 10px;
+}
+.main .features__card-description {
+  margin-bottom: 20px;
+}
+.main .features__card-icon {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+.main .features__card--blue {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  border-top: 4px solid var(--blue);
+}
+.main .features__card--cyan {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  border-top: 4px solid var(--cyan);
+}
+.main .features__card--orange {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  border-top: 4px solid var(--orange);
+}
+.main .features__card--red {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-top: 4px solid var(--red);
 }
 
 /*# sourceMappingURL=main.css.map */
