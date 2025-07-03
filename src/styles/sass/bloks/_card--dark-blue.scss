@@ -3,4 +3,8 @@
 .card--dark-blue {
 	background-color: var(--dark-blue);
 	grid-area: 2 / 2 / 3 / 4;
+
+	@include tablet {
+		grid-area: 4 / 1 / 5 / 3;
+	}
 }
