@@ -1,3 +1,5 @@
+@use '../helpers' as *;
+
 .card--white {
 	background-color: var(--white);
 	color: var(--grey-500);
