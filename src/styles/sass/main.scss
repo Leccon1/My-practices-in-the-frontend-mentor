@@ -4,5 +4,9 @@
 @use './variables.scss';
 @use './utilites.scss';
 
+@use './bloks/container.scss';
 @use './bloks/card.scss';
 @use './bloks/card--purple.scss';
+@use './bloks/card--grey.scss';
+@use './bloks/_card--white.scss';
+@use './bloks/card--dark-blue.scss';

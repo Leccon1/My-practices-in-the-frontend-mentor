@@ -23,7 +23,9 @@
 		}
 	}
 	&__title {
+		position: relative;
 		font-weight: var(--font-weight-semiBold);
 		margin-bottom: 15px;
+		z-index: 5;
 	}
 }
