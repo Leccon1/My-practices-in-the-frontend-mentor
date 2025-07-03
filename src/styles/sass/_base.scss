@@ -1,6 +1,11 @@
+@use 'helpers' as *;
+
 body {
 	background-color: var(--grey-100);
 	font-family: var(--font-family);
-	/* color: var(--white); */
-	color: black;
+	color: var(--white);
+}
+.page {
+	max-width: 1550px;
+	margin: 0 auto;
 }
