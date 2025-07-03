@@ -95,8 +95,8 @@ body {
   grid-area: 1/3/2/4;
 }
 
-.card__author-img--grey {
-  border-color: var(--grey-400);
+.card__author-img--purple-500 {
+  border-color: var(--purple-500);
 }
 
 .card--white {
@@ -105,7 +105,12 @@ body {
 }
 
 .card__author-img--white {
-  border-color: var(--white);
+  border-color: var(--purple-50);
+}
+
+.card--dark-blue {
+  background-color: var(--dark-blue);
+  grid-area: 2/2/3/4;
 }
 
 /*# sourceMappingURL=main.css.map */
