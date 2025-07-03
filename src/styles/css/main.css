@@ -11,6 +11,7 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 * {
@@ -36,15 +37,16 @@ body {
   --grey-500: rgb(72, 85, 106);
   --dark-blue: rgb(25, 33, 46);
   --black: #000;
-  --box-shadow: box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) ;
+  --box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .card__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  gap: 30px;
 }
 
 .card {
