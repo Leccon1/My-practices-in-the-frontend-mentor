@@ -1,0 +1,57 @@
+.card {
+	display: flex;
+	flex-direction: row;
+
+	&__img {
+		width: 320px;
+		background-image: url('../../images/drawers.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	&__content {
+		width: 410px;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		background-color: #fff;
+		border-radius: 10px;
+		padding: 30px;
+
+		&-title {
+			font-weight: var(--font-weight-bold);
+		}
+		&-subtitle {
+			color: var(--desaturated-dark-blue);
+			font-weight: var(--font-weight-medium);
+		}
+	}
+
+	&__author {
+		display: flex;
+		align-items: center;
+
+		&-avatar {
+			margin-right: 15px;
+			width: 35px;
+			height: auto;
+			border-radius: 50%;
+		}
+
+		&-name {
+			font-weight: var(--font-weight-bold);
+		}
+		&-date {
+			color: var(--desaturated-dark-blue);
+			font-weight: var(--font-weight-medium);
+		}
+		&-share {
+			margin-left: 150px;
+			border: none;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+		}
+	}
+}

@@ -11,6 +11,13 @@ body {
   line-height: 1.5;
 }
 
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 *::after,
 *::before,
 * {
@@ -29,6 +36,59 @@ body {
   --font-weight-bold: 700;
   --font-weight-medium: 500;
   --box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+}
+.card__img {
+  width: 320px;
+  background-image: url("../../images/drawers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card__content {
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+.card__content-title {
+  font-weight: var(--font-weight-bold);
+}
+.card__content-subtitle {
+  color: var(--desaturated-dark-blue);
+  font-weight: var(--font-weight-medium);
+}
+.card__author {
+  display: flex;
+  align-items: center;
+}
+.card__author-avatar {
+  margin-right: 15px;
+  width: 35px;
+  height: auto;
+  border-radius: 50%;
+}
+.card__author-name {
+  font-weight: var(--font-weight-bold);
+}
+.card__author-date {
+  color: var(--desaturated-dark-blue);
+  font-weight: var(--font-weight-medium);
+}
+.card__author-share {
+  margin-left: 150px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
