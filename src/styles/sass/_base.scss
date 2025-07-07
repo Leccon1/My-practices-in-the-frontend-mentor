@@ -9,3 +9,10 @@ body {
 	color: var(--very-dark-grayish-blue);
 	line-height: 1.5;
 }
+
+.page {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
