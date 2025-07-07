@@ -1,0 +1,11 @@
+html {
+	font-size: var(--font-size);
+	font-family: var(--font-family);
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--light-grayish-blue);
+	color: var(--very-dark-grayish-blue);
+	line-height: 1.5;
+}
