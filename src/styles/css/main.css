@@ -147,5 +147,15 @@ body {
   letter-spacing: 3px;
   background-color: var(--very-dark-grayish-blue);
 }
+.card__preview::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--very-dark-grayish-blue);
+}
 
 /*# sourceMappingURL=main.css.map */
