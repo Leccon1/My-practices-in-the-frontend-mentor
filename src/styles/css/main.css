@@ -143,6 +143,7 @@ button {
   width: 250px;
   height: 50px;
   border-radius: 10px;
+  opacity: 0;
   visibility: hidden;
   display: flex;
   flex-direction: row;
@@ -154,7 +155,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 3px;
   background-color: var(--very-dark-grayish-blue);
-  transition-duration: 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 .card__preview::after {
   content: "";
@@ -167,6 +168,7 @@ button {
   border-top: 10px solid var(--very-dark-grayish-blue);
 }
 .card__preview.active {
+  opacity: 1;
   visibility: visible;
 }
 

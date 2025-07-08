@@ -9,15 +9,6 @@ function togglePreview() {
 if (window.innerWidth <= 768) {
 	btnShare.addEventListener('click', togglePreview)
 } else {
-	btnShare.addEventListener('mouseenter', () => {
-		cardPreview.classList.add('active')
-	})
-	btnShare.addEventListener('mouseleave', () => {
-		cardPreview.classList.remove('active')
-	})
-	cardPreview.addEventListener('mouseleave', () => {
-		cardPreview.classList.remove('active')
-	})
 	wrapper.addEventListener('mouseenter', () => {
 		cardPreview.classList.add('active')
 	})
