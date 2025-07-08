@@ -56,6 +56,7 @@
 	}
 
 	&__author {
+		position: relative;
 		display: flex;
 		align-items: center;
 
@@ -92,11 +93,12 @@
 
 	&__preview {
 		position: absolute;
-		top: 480px;
-		right: 540px;
+		bottom: 60px;
+		left: 60%;
 		width: 250px;
 		height: 50px;
 		border-radius: 10px;
+		visibility: hidden;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -107,15 +109,20 @@
 		text-transform: uppercase;
 		letter-spacing: 3px;
 		background-color: var(--very-dark-grayish-blue);
-	}
-	&__preview::after {
-		content: '';
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		transform: translateX(-50%);
-		border-left: 10px solid transparent;
-		border-right: 10px solid transparent;
-		border-top: 10px solid var(--very-dark-grayish-blue);
+		transition-duration: 0.3s;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-top: 10px solid var(--very-dark-grayish-blue);
+		}
+		&.active {
+			visibility: visible;
+		}
 	}
 }
