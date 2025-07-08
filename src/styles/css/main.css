@@ -35,12 +35,13 @@ body {
   --font-family: "Manrope";
   --font-weight-bold: 700;
   --font-weight-medium: 500;
-  --box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .card {
   display: flex;
   flex-direction: row;
+  box-shadow: var(--box-shadow);
 }
 @media (width <= 767.98px) {
   .card {
