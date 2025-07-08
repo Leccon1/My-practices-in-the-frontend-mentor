@@ -76,6 +76,10 @@
 		}
 		&-info {
 			margin-right: 150px;
+
+			@include mobile {
+				margin-right: 50px;
+			}
 		}
 		&-date {
 			color: var(--desaturated-dark-blue);
@@ -86,6 +90,11 @@
 			width: 30px;
 			height: 30px;
 			border-radius: 50%;
+			transition-duration: 0.3s;
+
+			&:hover {
+				background-color: var(--grayish-blue);
+			}
 
 			@include mobile {
 				margin-left: 75px;
@@ -113,6 +122,10 @@
 		letter-spacing: 3px;
 		background-color: var(--very-dark-grayish-blue);
 		transition: all ease-in-out 0.3s;
+
+		@include mobile {
+			left: 150px;
+		}
 
 		&::after {
 			content: '';

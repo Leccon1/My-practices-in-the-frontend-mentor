@@ -121,6 +121,11 @@ button {
 .card__author-info {
   margin-right: 150px;
 }
+@media (width <= 767.98px) {
+  .card__author-info {
+    margin-right: 50px;
+  }
+}
 .card__author-date {
   color: var(--desaturated-dark-blue);
   font-weight: var(--font-weight-medium);
@@ -130,6 +135,10 @@ button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  transition-duration: 0.3s;
+}
+.card__author-share:hover {
+  background-color: var(--grayish-blue);
 }
 @media (width <= 767.98px) {
   .card__author-share {
@@ -156,6 +165,11 @@ button {
   letter-spacing: 3px;
   background-color: var(--very-dark-grayish-blue);
   transition: all ease-in-out 0.3s;
+}
+@media (width <= 767.98px) {
+  .card__preview {
+    left: 150px;
+  }
 }
 .card__preview::after {
   content: "";
