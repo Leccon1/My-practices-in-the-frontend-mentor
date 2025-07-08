@@ -87,4 +87,23 @@
 			}
 		}
 	}
+
+	&__preview {
+		position: absolute;
+		top: 480px;
+		right: 540px;
+		width: 250px;
+		height: 50px;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		color: #fff;
+		font-weight: var(--font-weight-medium);
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		background-color: var(--very-dark-grayish-blue);
+	}
 }
