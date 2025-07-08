@@ -1,6 +1,12 @@
+@use '../helpers/' as *;
+
 .card {
 	display: flex;
 	flex-direction: row;
+
+	/* @include mobile {
+
+  } */
 
 	&__img {
 		width: 320px;

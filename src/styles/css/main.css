@@ -41,6 +41,9 @@ body {
 .card {
   display: flex;
   flex-direction: row;
+  /* @include mobile {
+
+   } */
 }
 .card__img {
   width: 320px;
