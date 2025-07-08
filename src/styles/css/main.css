@@ -118,12 +118,14 @@ button {
 .card__author-name {
   font-weight: var(--font-weight-bold);
 }
+.card__author-info {
+  margin-right: 150px;
+}
 .card__author-date {
   color: var(--desaturated-dark-blue);
   font-weight: var(--font-weight-medium);
 }
 .card__author-share {
-  margin-left: 150px;
   border: none;
   width: 30px;
   height: 30px;
