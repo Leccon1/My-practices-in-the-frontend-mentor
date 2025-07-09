@@ -1,9 +1,11 @@
 @use '../helpers/' as *;
 
 .card {
+	position: relative;
 	display: flex;
 	flex-direction: row;
-
+	border-radius: 10px;
+	background-color: #fff;
 	box-shadow: var(--box-shadow);
 
 	@include mobile {
@@ -30,9 +32,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
-		background-color: #fff;
-		border-radius: 10px;
-		padding: 30px;
+		padding: 30px 30px 15px 30px;
 
 		@include mobile {
 			width: 350px;
@@ -56,9 +56,9 @@
 	}
 
 	&__author {
-		position: relative;
 		display: flex;
 		align-items: center;
+		margin-bottom: 5px;
 
 		@include mobile {
 			margin-top: 15px;
@@ -73,6 +73,10 @@
 
 		&-name {
 			font-weight: var(--font-weight-bold);
+
+			@include mobile {
+				margin-right: 30px;
+			}
 		}
 		&-info {
 			margin-right: 150px;
@@ -86,47 +90,38 @@
 			font-weight: var(--font-weight-medium);
 		}
 		&-share {
-			border: none;
-			width: 30px;
-			height: 30px;
-			border-radius: 50%;
-			transition-duration: 0.3s;
-
-			@include hover {
-				&:hover {
-					background-color: var(--grayish-blue);
-				}
-			}
-
-			@include mobile {
-				margin-left: 75px;
-			}
+			@include btnShare;
 		}
 	}
 
 	&__preview {
 		position: absolute;
-		bottom: 60px;
-		left: 60%;
+		bottom: 80px;
+		left: 75%;
 		width: 250px;
 		height: 50px;
 		border-radius: 10px;
 		opacity: 0;
 		visibility: hidden;
+		pointer-events: none;
 		display: flex;
-		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 		gap: 15px;
+		background-color: var(--very-dark-grayish-blue);
 		color: #fff;
-		font-weight: var(--font-weight-medium);
+		font-size: 13px;
 		text-transform: uppercase;
 		letter-spacing: 3px;
-		background-color: var(--very-dark-grayish-blue);
 		transition: all ease-in-out 0.3s;
 
 		@include mobile {
-			left: 150px;
+			position: static;
+			display: none;
+			width: 100%;
+			height: 75px;
+			padding: 20px;
+			border-radius: 0 0 10px 10px;
 		}
 
 		&::after {
@@ -138,10 +133,31 @@
 			border-left: 10px solid transparent;
 			border-right: 10px solid transparent;
 			border-top: 10px solid var(--very-dark-grayish-blue);
+
+			@include mobile {
+				display: none;
+			}
 		}
 		&.active {
 			opacity: 1;
 			visibility: visible;
+			pointer-events: auto;
+
+			@include mobile {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 20px;
+			}
+		}
+		&-close {
+			display: none;
+			margin-left: 63px;
+			@include btnShare;
+
+			@include mobile {
+				display: block;
+			}
 		}
 	}
 }
