@@ -1,0 +1,57 @@
+@use './helpers/' as *;
+
+body {
+	background-color: var(--Stone-100);
+	color: var(--Stone-600);
+	font-family: var(--base-font);
+	font-size: 16px;
+	font-weight: var(--fw-regular);
+}
+
+ul,
+ol {
+	padding-inline-start: 20px;
+}
+
+li {
+	padding-left: 15px;
+	margin-bottom: 15px;
+}
+
+h1 {
+	color: var(--black);
+}
+
+h2 {
+	color: var(--Brown-800);
+}
+
+h3 {
+	color: var(--Rose-800);
+}
+
+h1,
+h2 {
+	font-family: var(--alt-font);
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	all: unset;
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+	transition-duration: var(--transition-duration);
+}

@@ -1,0 +1,19 @@
+@use '@style/sass/_var' as *;
+@use '@style/sass/helpers/' as *;
+
+.card {
+	background-color: $color-white;
+	width: rem(690);
+	height: rem(400);
+	display: flex;
+	flex-direction: row;
+	gap: rem(35);
+	border-radius: rem(15);
+	padding: rem(30);
+
+  @include mobile {
+    width: rem(375);
+    height: 100%;
+    flex-direction: column;
+  }
+}

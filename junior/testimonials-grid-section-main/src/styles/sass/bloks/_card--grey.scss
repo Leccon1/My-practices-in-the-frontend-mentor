@@ -1,0 +1,14 @@
+@use '../helpers' as *;
+
+.card--grey {
+	background-color: var(--grey-500);
+	grid-area: 1 / 3 / 2 / 4;
+
+	@include tablet {
+		grid-area: 1 / 2 / 2 / 3;
+	}
+}
+
+.card__author-img--purple-500 {
+	border-color: var(--purple-500);
+}

@@ -1,0 +1,22 @@
+:root {
+	/* Primary */
+	--purple-50: rgb(238, 229, 255);
+	--purple-300: rgb(196, 162, 246);
+	--purple-500: rgb(117, 65, 200);
+
+	--font-family: 'Barlow Semi Condensed';
+	--font-size: 13px;
+	--font-weight-medium: 500;
+	--font-weight-semiBold: 600;
+
+	/* Neutral */
+	--white: #fff;
+	--grey-100: rgb(231, 234, 238);
+	--grey-200: rgb(207, 207, 207);
+	--grey-400: rgb(103, 109, 126);
+	--grey-500: rgb(72, 85, 106);
+	--dark-blue: rgb(25, 33, 46);
+	--black: #000;
+
+	--box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.05);
+}

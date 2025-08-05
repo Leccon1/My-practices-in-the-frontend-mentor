@@ -1,0 +1,9 @@
+@use '../helpers' as *;
+
+.card--kira {
+	grid-area: 1 / 4 / 3 / 5;
+
+	@include tablet {
+		grid-area: 2 / 2 / 4 / 3;
+	}
+}

@@ -1,0 +1,271 @@
+@charset "UTF-8";
+.container {
+  background-color: var(--White);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.__body-margin-botton {
+  padding-bottom: 25px;
+}
+
+.hr {
+  border-bottom: 1px solid var(--Stone-150);
+}
+
+.title {
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.9px;
+}
+
+.title-margin {
+  margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.content-padding {
+  padding: 50px;
+}
+
+.border-radius {
+  border-radius: 20px;
+}
+
+body {
+  background-color: var(--Stone-100);
+  color: var(--Stone-600);
+  font-family: var(--base-font);
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+}
+
+ul,
+ol {
+  padding-inline-start: 20px;
+}
+
+li {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: var(--black);
+}
+
+h2 {
+  color: var(--Brown-800);
+}
+
+h3 {
+  color: var(--Rose-800);
+}
+
+h1,
+h2 {
+  font-family: var(--alt-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/outfit/static/Outfit-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("../../assets/fonts/outfit/static/Outfit-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "YoungSerif";
+  src: url("../../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --black: #000;
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+  --base-font: "Outfit";
+  --alt-font: "YoungSerif";
+  --fw-bold: 700;
+  --fw-semiBold: 600;
+  --fw-regular: 400;
+  --transition-duration: 0.2s;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+  cursor: pointer; /* добавлено для интерактивности */
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Address */
+address {
+  font-style: normal;
+}
+
+/* Form styles */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent; /* можно оставить или задать по умолчанию */
+}
+
+input::-ms-clear {
+  display: none; /* скрывает крестик в IE/Edge */
+}
+
+button,
+input[type=submit] {
+  display: inline-block; /* можно оставить или использовать inline-flex/inline-grid при необходимости */
+  box-shadow: none; /* убирает тень у кнопок в некоторых браузерах */
+  background: none; /* убирает фон по умолчанию */
+  cursor: pointer; /* добавлено для интерактивности */
+}
+
+input[type=file] {
+  max-width: 100%;
+}
+
+/* Фокус и активное состояние формы */
+input[type=text]:focus,
+textarea[type=text]:focus,
+button[type=button]:focus,
+select:focus {
+  outline: none; /* можно добавить стили фокуса для доступности */
+}
+
+.header__image {
+  border-radius: 15px;
+}
+.header__title {
+  margin: 35px 0px 25px 0px;
+  font-size: 38px;
+}
+
+.preparation-time__body {
+  margin: 60px 0px 60px 30px;
+}
+.preparation-time__list ::marker {
+  color: var(--Rose-800);
+}
+
+.ingredients__list {
+  list-style-type: square;
+}
+.ingredients__list ::marker {
+  color: var(--Brown-800);
+}
+
+.instructions__body {
+  margin-top: 25px;
+}
+.instructions__list ::marker {
+  color: var(--Brown-800);
+  font-family: var(--base-font);
+  font-weight: var(--fw-semiBold);
+}
+
+.nutrition__body {
+  margin-top: 25px;
+}
+.nutrition__p {
+  margin-bottom: 20px;
+}
+.nutrition .nutrition__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutrition .nutrition__line-title {
+  padding: 15px 0px 15px 20px;
+}
+.nutrition .nutrition__line-value {
+  color: var(--Brown-800);
+  font-weight: var(--fw-semiBold);
+  padding: 15px 20px 15px 0px;
+}
+
+/*# sourceMappingURL=main.css.map */

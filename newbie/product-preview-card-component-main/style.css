@@ -1,0 +1,162 @@
+:root {
+	/* primary fonts */
+	--Fraunces: 'Fraunces';
+	--Montserrat: 'Montserrat';
+	/* primary colors */
+	--green-500: rgb(60, 128, 103);
+	--green-700: rgb(27, 65, 51);
+
+	/* neutral colors */
+	--black: rgb(28, 35, 43);
+	--white: rgb(255, 255, 255);
+	--grey: rgb(108, 114, 137);
+	--cream: rgb(242, 235, 227);
+
+	/* broder radius */
+	--border-radius: 10px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--Montserrat);
+	background-color: var(--cream);
+	color: var(--grey);
+}
+
+p {
+	font-size: 14px;
+}
+
+.page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.card {
+	width: 650px;
+	display: flex;
+}
+
+@media (max-width: 660px) {
+	.card {
+		width: 330px;
+		flex-direction: column;
+	}
+}
+
+.card__img {
+	max-width: 325px;
+	height: auto;
+	border-top-left-radius: var(--border-radius);
+	border-bottom-left-radius: var(--border-radius);
+}
+
+@media (max-width: 660px) {
+	.card__img {
+		max-width: 330px;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: var(--border-radius);
+	}
+}
+
+.card__body {
+	width: 340px;
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	padding: 35px;
+	border-top-right-radius: var(--border-radius);
+	border-bottom-right-radius: var(--border-radius);
+}
+
+@media (max-width: 660px) {
+	.card__body {
+		width: 260px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: var(--border-radius);
+		border-bottom-left-radius: var(--border-radius);
+	}
+}
+
+.card__suptitle {
+	color: var(--grey);
+	font-family: var(--Montserrat);
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	margin-bottom: 15px;
+}
+
+@media (max-width: 660px) {
+	.card__suptitle {
+		font-size: 12px;
+	}
+}
+
+.card__title {
+	color: var(--black);
+	font-size: 38px;
+	font-family: var(--Fraunces);
+	margin-bottom: 20px;
+}
+
+@media (max-width: 660px) {
+	.card__title {
+		font-size: 30px;
+	}
+}
+
+.card__description {
+	font-size: 16px;
+}
+
+@media (max-width: 660px) {
+	.card__description {
+		font-size: 14px;
+	}
+}
+
+.card__price {
+	margin: 25px 0px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.card__price-new {
+	font-family: var(--Fraunces);
+	color: var(--green-500);
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.card__price-old {
+	text-decoration: line-through;
+}
+
+.card__button {
+	padding: 15px;
+	background-color: var(--green-500);
+	color: var(--white);
+	text-align: center;
+	font-family: var(--Montserrat);
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	border-radius: var(--border-radius);
+}
+
+.card__button::before {
+	content: url(./images/icon-cart.svg);
+	margin-right: 10px;
+}
+
+.card__button:hover {
+	background-color: var(--green-700);
+}

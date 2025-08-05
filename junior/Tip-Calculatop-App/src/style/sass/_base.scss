@@ -1,0 +1,39 @@
+@use './var' as *;
+@use './helpers/' as *;
+
+html {
+	font-size: 62.5%; /*1rem = 10px*/
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $color-grey-200;
+	font-family: $font-family-primary;
+	color: $color-grey-400;
+}
+
+.page {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.page-title {
+	margin-bottom: rem(40);
+	text-align: center;
+	color: $color-green-900;
+	font-size: rem(24);
+	text-transform: uppercase;
+	letter-spacing: rem(8);
+
+	@include mobile {
+		margin: rem(25) 0 rem(25);
+	}
+}
+
+button[type='button']:active {
+	background-color: $color-green-400;
+}

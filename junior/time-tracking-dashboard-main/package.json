@@ -1,0 +1,16 @@
+{
+  "name": "time-tracking-dashboard-main",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.89.2",
+    "vite": "^7.0.4"
+  }
+}

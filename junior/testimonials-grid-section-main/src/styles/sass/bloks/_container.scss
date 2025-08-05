@@ -1,0 +1,20 @@
+@use '../helpers' as *;
+
+.card__container {
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 30px;
+
+	@include tablet {
+		margin: 80px 0px;
+		grid-template-columns: repeat(2, 250px);
+		grid-template-rows: repeat(4, 1fr);
+	}
+
+	@include mobile {
+		margin: 80px 0px;
+		display: flex;
+		flex-direction: column;
+	}
+}
