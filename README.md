@@ -7,22 +7,20 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 
 ## Level: newbie<sup>1</sup>
 
-| № | Name | Technologies | Live Demo |
-|---|------|--------------|-----------|
-| 1 | blog-preview-card | HTML, SCSS | [Live Demo](https://leccon1.github.io/card_blog/)
-| 2 | social-links-profile-main | HTML, SCSS | [Live Demo](https://leccon1.github.io/social-link/)
-| 3 | recipe-page-main | HTML, SCSS | [Live Demo](https://leccon1.github.io/recipe-page-main/)
-| 4 | product-preview-card-component-main | HTML, SCSS | [Live Demo](https://leccon1.github.io/product-preview-card-component-main/)
-| 5 | four-card-feature-section-master | HTML, SCSS | [Live Demo](https://leccon1.github.io/four-card-feature-section-master/)
-| 6 | article-preview-component-master | HTML, SCSS | [Live Demo](https://leccon1.github.io/article-preview-component-master/)
+| № | Name                              | Technologies    | Live Demo Link |
+|---|-----------------------------------|------------------|----------------|
+| 1 | Blog Preview Card                | HTML, SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/newbie/blog-preview-card/) |
+| 2 | Social Links Profile Main        | HTML, SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/newbie/social-links-profile-main/) |
+| 3 | Recipe Page Main                 | HTML, SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/newbie/recipe-page-main/) |
+| 4 | Product Preview Card Component   | HTML, SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/newbie/product-preview-card-component-main/) |
+| 5 | Four Card Feature Section        | HTML, SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/newbie/four-card-feature-section-master/) |
+| 6 | Article Preview Component        | HTML, SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/newbie/article-preview-component-master/) |
 
----
+## Level: junior
 
-## Level: junior<sup>1</sup>
-
-| № | Name | Technologies | Live Demo |
-|---|------|--------------|-----------|
-| 1 | testimonials-grid-section-main | HTML, SCSS, Grid + flexbox | [Live Demo](https://leccon1.github.io/testimonials-grid-section-main/)
-| 2 | newsletter-sign-up-with-success-message-main | HTML, SCSS, JS | [Live Demo](https://leccon1.github.io/newsletter-sign-up-with-success-message-main/)
-| 3 | time-tracking-dashboard-main | HTML, SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/time-tracking-dashboard-main/)
-| 4 | Tip-Calculatop-App | HTML, SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/Tip-Calculatop-App/)
+| № | Name                            | Technologies        | Live Demo Link |
+|---|----------------------------------|----------------------|----------------|
+| 1 | Testimonials Grid Section Main  | HTML, SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/junior/testimonials-grid-section-main/) |
+| 2 | Newsletter Sign‑Up w/ Success   | HTML, SCSS, JS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/junior/newsletter-sign-up-with-success-message-main/) |
+| 3 | Time Tracking Dashboard         | HTML, SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/junior/time-tracking-dashboard-main/) |
+| 4 | Tip Calculator App              | HTML, SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/junior/Tip-Calculatop-App/) |
