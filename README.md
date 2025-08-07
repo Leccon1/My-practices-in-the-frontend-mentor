@@ -2,6 +2,9 @@
 In this repository are some practices to improve my front-end skills.
 
 Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
+---
+
+## in the demo folder, there are projects in which I used vite
 
 ---
 
