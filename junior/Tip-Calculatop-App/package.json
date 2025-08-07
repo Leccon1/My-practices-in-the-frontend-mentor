@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": "https://leccon1.github.io/Tip-Calculatop-App/",
+	"homepage": "https://leccon1.github.io/My-practices-in-the-frontend-mentor/junior/Tip-Calculatop-App/",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
