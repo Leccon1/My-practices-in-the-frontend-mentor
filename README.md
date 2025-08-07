@@ -26,4 +26,4 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 1 | Testimonials Grid Section Main  | HTML, SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/junior/testimonials-grid-section-main/) |
 | 2 | Newsletter Sign‑Up w/ Success   | HTML, SCSS, JS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/junior/newsletter-sign-up-with-success-message-main/) |
 | 3 | Time Tracking Dashboard         | HTML, SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/junior/time-tracking-dashboard-main/) |
-| 4 | Tip Calculator App              | HTML, SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/junior/Tip-Calculatop-App/) |
+| 4 | Tip Calculator App              | HTML, SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/tip-calculator-app-main-demo) |
