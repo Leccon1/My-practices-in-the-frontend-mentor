@@ -1,0 +1,44 @@
+@use '@style/sass/var' as *;
+@use '@style/sass/helpers' as *;
+
+.review {
+	width: 100vw;
+	margin-left: calc(-50vw + 600px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	&__title {
+		@include sectionTitle;
+	}
+	&__cards {
+		overflow: hidden;
+		margin: rem(70) 0;
+		display: flex;
+		flex-direction: row;
+		gap: rem(150);
+	}
+	&__card {
+		width: rem(460);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__img {
+		width: rem(75);
+	}
+	&__name {
+		margin: rem(25) 0;
+
+		@include subtitle;
+	}
+	&__text {
+		text-align: center;
+
+		@include sectionText;
+	}
+	&__btn {
+		@include startedBtn;
+	}
+}

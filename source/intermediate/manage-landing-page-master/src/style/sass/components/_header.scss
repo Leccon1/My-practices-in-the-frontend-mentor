@@ -1,0 +1,30 @@
+@use '@style/sass/var' as *;
+@use '@style/sass/helpers' as *;
+
+.header {
+	margin-bottom: rem(130);
+	.nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+		&__list {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			gap: rem(32);
+		}
+		&__link {
+			color: $color-blue-950;
+			font-size: rem(14);
+			transition: opacity $transition-fast;
+
+			@include hover {
+				opacity: 0.5;
+			}
+		}
+		&__btn {
+			@include startedBtn;
+		}
+	}
+}

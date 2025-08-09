@@ -1,0 +1,39 @@
+@use '@style/sass/var' as *;
+@use '@style/sass/helpers' as *;
+
+.cta {
+	position: relative;
+	background-color: $color-orange-400;
+	width: 100vw;
+	margin: rem(200) calc(-50vw + 600px) 0;
+	padding: rem(35) 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 1;
+	&__title {
+		width: rem(600);
+		color: $color-white !important;
+		z-index: 1;
+
+		@include sectionTitle;
+	}
+	&__btn {
+		background-color: $color-white !important;
+		color: $color-orange-400 !important;
+		font-weight: $font-weight-bold;
+		z-index: 1;
+
+		@include hover {
+			background-color: rgba(255, 255, 255, 0.5) !important;
+		}
+		@include startedBtn;
+	}
+}
+.bg-simplify-section {
+	position: absolute;
+	top: rem(-140);
+	right: rem(-50);
+	z-index: -1;
+}

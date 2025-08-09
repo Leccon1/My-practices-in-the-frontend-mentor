@@ -1,0 +1,35 @@
+@use '@style/sass/var' as *;
+@use '@style/sass/helpers/media' as *;
+@use '@style/sass/helpers/functions' as *;
+
+@mixin startedBtn {
+	background-color: $color-orange-400;
+	color: $color-white;
+	box-shadow: $box-shadow-lg;
+	border-radius: rem(50);
+	font-size: rem(14);
+	padding: rem(14) rem(32);
+	transition: all $transition-fast;
+
+	&:active {
+		transform: scale(0.98);
+	}
+	@include hover {
+		background-color: rgba(242, 95, 58, 0.5);
+	}
+}
+
+@mixin sectionTitle {
+	font-size: rem(48);
+	color: $color-blue-950;
+}
+
+@mixin sectionText {
+	font-size: rem(16);
+	color: $color-gray;
+}
+
+@mixin subtitle {
+	font-size: rem(16);
+	color: $color-blue-950;
+}

@@ -5,22 +5,29 @@
 		<link
 			rel="icon"
 			type="image/svg+xml"
-			href="https://github.com/Leccon1/Manage-landing-page/assets/favicon-32x32-DQjEQYWa.png"
+			href="/My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo/assets/favicon-32x32-DQjEQYWa.png"
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Frontend Mentor | Manage landing page</title>
-		<script type="module" crossorigin src="https://github.com/Leccon1/Manage-landing-page/assets/index-B8Nz4mnN.js"></script>
-		<link rel="stylesheet" crossorigin href="https://github.com/Leccon1/Manage-landing-page/assets/index-DFE2zzJz.css">
+		<script type="module" crossorigin src="/My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo/assets/index-Cg4jbe5I.js"></script>
+		<link rel="stylesheet" crossorigin href="/My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo/assets/index-Cv9-jpQi.css">
 	</head>
 	<body>
 		<div class="page">
+			<img
+				src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='814'%20height='814'%3e%3crect%20width='436'%20height='970'%20x='774'%20y='-62'%20fill='%23FFF0EC'%20fill-rule='evenodd'%20rx='218'%20transform='rotate(45%20718.814%20-291.157)'/%3e%3c/svg%3e"
+				alt=""
+				class="bg-pattern-top"
+			/>
 			<header class="header">
 				<nav class="nav">
-					<img
-						src="https://github.com/Leccon1/Manage-landing-page/assets/logo-BE3TwBi3.svg"
-						alt="logo"
-						class="nav__logo"
-					/>
+					<a href="#" class="nav__logo-link">
+						<img
+							src="/My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo/assets/logo-BE3TwBi3.svg"
+							alt="logo"
+							class="nav__logo-img"
+						/>
+					</a>
 					<ul class="nav__list">
 						<li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
 						<li class="nav__item"><a href="#" class="nav__link">Product</a></li>
@@ -35,32 +42,35 @@
 					<button class="nav__btn">Get Started</button>
 				</nav>
 			</header>
-      <picture></picture>
 			<main class="main" id="main">
-				<div class="main__hero">
-					<h1 class="main__title">
-						Bring everyone together to build better products
-					</h1>
-					<p class="main__subtitle">
-						Manage makes it simple for software teams to plan day-to-day tasks
-						while keeping the larger team goals in view.
-					</p>
-					<button class="main__btn">Get Started</button>
-				</div>
-				<div class="main__image">
-					<img
-						src="https://github.com/Leccon1/Manage-landing-page/assets/illustration-intro-CLlASlIv.svg"
-						alt="illustration-intro"
-						class="main__img"
-					/>
-				</div>
+				<section class="hero">
+					<div class="hero__content">
+						<h1 class="hero__title">
+							Bring everyone together to build better products.
+						</h1>
+						<p class="hero__subtitle">
+							Manage makes it simple for software teams to plan day-to-day tasks
+							while keeping the larger team goals in view.
+						</p>
+						<button class="hero__btn">Get Started</button>
+					</div>
+					<div class="hero__image">
+						<img
+							src="/My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo/assets/illustration-intro-CLlASlIv.svg"
+							alt="illustration-intro"
+							class="hero__art"
+						/>
+					</div>
+				</section>
 				<section class="manage">
-					<h2 class="manage__title">What’s different about Manage?</h2>
-					<p class="manage__text">
-						Manage provides all the functionality your team needs, without the
-						complexity. Our software is tailor-made for modern digital product
-						teams.
-					</p>
+					<div class="manage__content">
+						<h2 class="manage__title">What’s different about Manage?</h2>
+						<p class="manage__text">
+							Manage provides all the functionality your team needs, without the
+							complexity. Our software is tailor-made for modern digital product
+							teams.
+						</p>
+					</div>
 					<ul class="manage__list">
 						<li class="manage__item">
 							<h3 class="manage__subtitle">Track company-wide progress</h3>
@@ -93,60 +103,71 @@
 					<h2 class="review__title">What they've said</h2>
 					<div class="review__cards">
 						<div class="review__card">
-							<div class="review__image">
-								<img
-									src="https://github.com/Leccon1/Manage-landing-page/assets/avatar-anisha-DOinXdGM.png"
-									alt="avatar-anisha"
-									class="review__img"
-								/>
-							</div>
-							<div class="review__content">
-								<h3 class="review__name">Anisha Li</h3>
-								<p class="review__text">
-									“Manage has supercharged our team’s workflow. The ability to
-									maintain visibility on larger milestones at all times keeps
-									everyone motivated.”
-								</p>
-							</div>
+							<img
+								src="/My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo/assets/avatar-anisha-DOinXdGM.png"
+								alt="avatar-anisha"
+								class="review__img"
+							/>
+							<h3 class="review__name">Anisha Li</h3>
+							<p class="review__text">
+								“Manage has supercharged our team’s workflow. The ability to
+								maintain visibility on larger milestones at all times keeps
+								everyone motivated.”
+							</p>
 						</div>
 						<div class="review__card">
-							<div class="review__image">
-								<img
-									src="https://github.com/Leccon1/Manage-landing-page/assets/avatar-ali-B3jDBJFm.png"
-									alt="avatar-ali"
-									class="review__img"
-								/>
-							</div>
-							<div class="review__content">
-								<h3 class="review__name">Ali Bravo</h3>
-								<p class="review__text">
-									“We have been able to cancel so many other subscriptions since
-									using Manage. There is no more cross-channel confusion and
-									everyone is much more focused.”
-								</p>
-							</div>
+							<img
+								src="/My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo/assets/avatar-ali-B3jDBJFm.png"
+								alt="avatar-ali"
+								class="review__img"
+							/>
+							<h3 class="review__name">Ali Bravo</h3>
+							<p class="review__text">
+								“We have been able to cancel so many other subscriptions since
+								using Manage. There is no more cross-channel confusion and
+								everyone is much more focused.”
+							</p>
 						</div>
 						<div class="review__card">
-							<div class="review__image">
-								<img
-									src="https://github.com/Leccon1/Manage-landing-page/assets/avatar-richard-DHDXuR9s.png"
-									alt="avatar-richard"
-									class="review__img"
-								/>
-							</div>
-							<div class="review__content">
-								<h3 class="review__name">Richard Watts</h3>
-								<p class="review__text">
-									“Manage allows us to provide structure and process. It keeps
-									us organized and focused. I can’t stop recommending them to
-									everyone I talk to!”
-								</p>
-							</div>
+							<img
+								src="/My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo/assets/avatar-richard-DHDXuR9s.png"
+								alt="avatar-richard"
+								class="review__img"
+							/>
+							<h3 class="review__name">Richard Watts</h3>
+							<p class="review__text">
+								“Manage allows us to provide structure and process. It keeps us
+								organized and focused. I can’t stop recommending them to
+								everyone I talk to!”
+							</p>
+						</div>
+						<div class="review__card">
+							<img
+								src="/My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo/assets/avatar-shanai-B8oE4Hhb.png"
+								alt="avatar-shanai"
+								class="review__img"
+							/>
+							<h3 class="review__name">Shanai Gough</h3>
+							<p class="review__text">
+								“Their software allows us to track, manage and collaborate on
+								our projects from anywhere. It keeps the whole team in-sync
+								without being intrusive.”
+							</p>
 						</div>
 					</div>
-					<button class="review_btn">Get Started</button>
+					<button class="review__btn">Get Started</button>
 				</section>
 				<section class="cta">
+					<picture class="bg-simplify-section">
+						<source
+							media="(max-width: 768px)"
+							srcset="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='94'%20height='302'%3e%3crect%20width='310.431'%20height='708'%20x='-357'%20y='-17'%20fill='%23FFF0EC'%20fill-rule='evenodd'%20opacity='.071'%20rx='155.215'%20transform='scale(1%20-1)%20rotate(-45%20-951.398%2026.5)'/%3e%3c/svg%3e"
+						/>
+						<img
+							src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1439'%20height='360'%3e%3cg%20fill='%23FFF0EC'%20fill-rule='evenodd'%20opacity='.071'%20transform='translate(-171%20-373)'%3e%3crect%20width='310.431'%20height='708'%20x='205'%20y='410'%20rx='155.215'%20transform='scale(1%20-1)%20rotate(-45%20-1484.244%200)'/%3e%3crect%20width='310.431'%20height='708'%20x='1269'%20y='7'%20rx='155.215'%20transform='scale(1%20-1)%20rotate(-45%20552.684%200)'/%3e%3c/g%3e%3c/svg%3e"
+							alt="example image"
+						/>
+					</picture>
 					<h2 class="cta__title">Simplify how your team works today.</h2>
 					<button class="cta__btn">Get Started</button>
 				</section>
@@ -154,7 +175,7 @@
 			<footer class="footer" id="footer">
 				<div class="footer__img-container">
 					<img
-						src="https://github.com/Leccon1/Manage-landing-page/assets/logo-BE3TwBi3.svg"
+						src="/My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo/assets/logo-BE3TwBi3.svg"
 						alt="logo"
 						class="footer__img"
 					/>
@@ -180,37 +201,39 @@
 						/></a>
 					</div>
 				</div>
-				<ul class="footer__link">
-					<li class="footer__item">
-						<a href="#" class="footer__link-item">About Us</a>
-					</li>
-					<li class="footer__item">
-						<a href="#" class="footer__link-item">Contact</a>
-					</li>
-					<li class="footer__item">
-						<a href="#" class="footer__link-item">Blog</a>
-					</li>
-					<li class="footer__item">
-						<a href="#" class="footer__link-item">Careers</a>
-					</li>
-					<li class="footer__item">
-						<a href="#" class="footer__link-item">Support</a>
-					</li>
-					<li class="footer__item">
-						<a href="#" class="footer__link-item">Community</a>
-					</li>
-					<li class="footer__item">
-						<a href="#" class="footer__link-item">Privacy Policy</a>
-					</li>
-				</ul>
-				<div class="footer__subscription">
+				<nav aria-label="footer">
+					<ul class="footer__link">
+						<li class="footer__item">
+							<a href="#" class="footer__link-item">About Us</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link-item">Contact</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link-item">Blog</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link-item">Careers</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link-item">Support</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link-item">Community</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link-item">Privacy Policy</a>
+						</li>
+					</ul>
+				</nav>
+				<form action="#" method="post" class="footer__subscription">
 					<input
 						class="footer__input"
-						type="text"
+						type="email"
 						placeholder="Updates in your inbox"
 					/>
 					<button class="footer__btn">Go</button>
-				</div>
+				</form>
 				<p class="footer__text">&copy; Copyright 2020. All Rights Reserved</p>
 			</footer>
 		</div>

@@ -1,0 +1,29 @@
+@use '@style/sass/var' as *;
+@use '@style/sass/helpers' as *;
+
+.hero {
+	margin: rem(200) 0;
+	display: flex;
+	justify-content: space-between;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: center;
+		gap: rem(30);
+		max-width: rem(500);
+	}
+	&__title {
+		color: $color-blue-950;
+		font-size: rem(48);
+	}
+	&__subtitle {
+		width: rem(350);
+		margin: rem(30) 0;
+
+		@include sectionText;
+	}
+	&__btn {
+		@include startedBtn;
+	}
+}

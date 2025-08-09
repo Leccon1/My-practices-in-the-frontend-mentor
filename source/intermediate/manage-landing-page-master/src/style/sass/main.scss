@@ -3,3 +3,10 @@
 @use './normalized';
 @use './utilites';
 @use './var';
+
+@use './components/header';
+@use './components/hero';
+@use './components/manage';
+@use './components/review.scss';
+@use './components/cta';
+@use './components/footer';

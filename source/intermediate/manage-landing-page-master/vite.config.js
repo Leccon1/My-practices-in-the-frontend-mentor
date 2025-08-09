@@ -2,10 +2,11 @@ import { defineConfig } from 'vite'
 import path from 'path'
 
 export default defineConfig({
-	base: 'https://github.com/Leccon1/Manage-landing-page',
+	base: 'My-practices-in-the-frontend-mentor/demo/intermediate/Manage-landing-page-demo',
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
+			'@style': path.resolve(__dirname, './src/style'),
 		},
 	},
 })
