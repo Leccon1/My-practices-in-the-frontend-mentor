@@ -1,0 +1,79 @@
+@use '@style/sass/var' as *;
+@use '@style/sass/helpers/' as *;
+
+.header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	&__logo {
+		margin-left: rem(64);
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: rem(176);
+		width: rem(560);
+		height: rem(1);
+		background-color: $color-white;
+		opacity: 0.25;
+		z-index: 100;
+	}
+}
+.nav {
+	backdrop-filter: blur(80px);
+	background: rgba(255, 255, 255, 0.05);
+	display: flex;
+	align-items: center;
+	z-index: 10;
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: rem(48);
+
+		&:last-child {
+			margin-right: rem(64);
+		}
+		&:first-child {
+			margin-left: rem(160);
+		}
+	}
+	&__item {
+		position: relative;
+		padding: rem(39) 0;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 0;
+			height: 2px;
+			background-color: $color-white;
+			transform: translateX(-50%);
+			transition: width $transition-fast;
+		}
+
+		&:hover::after {
+			width: 100%; // растягиваем до всей ширины элемента
+		}
+	}
+	&__link {
+		color: $color-white;
+		text-transform: uppercase;
+		letter-spacing: rem(3);
+		font-size: fluid(14, 16);
+		font-family: $font-family-barlow-condensed;
+		font-weight: $font-weight-normal;
+
+		span {
+			font-weight: $font-weight-bold;
+			margin-right: rem(6);
+			letter-spacing: normal;
+		}
+	}
+}

@@ -8,6 +8,7 @@ export default defineConfig({
 			'@': path.resolve(__dirname, './src'),
 			'@style': path.resolve(__dirname, './src/style'),
 			'@components': path.resolve(__dirname, './src/style/sass/components'),
+			'@assets': path.resolve(__dirname, './src/assets'),
 		},
 	},
 })
