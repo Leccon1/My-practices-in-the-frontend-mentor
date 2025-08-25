@@ -17,7 +17,7 @@
 		top: 50%;
 		left: rem(176);
 		width: rem(560);
-		height: rem(1);
+		height: $border-width;
 		background-color: $color-white;
 		opacity: 0.25;
 		z-index: 100;
@@ -58,8 +58,10 @@
 			transition: width $transition-fast;
 		}
 
-		&:hover::after {
-			width: 100%; // растягиваем до всей ширины элемента
+		@include hover {
+			&::after {
+				width: 100%;
+			}
 		}
 	}
 	&__link {
