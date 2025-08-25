@@ -1,3 +1,5 @@
+@use '@style/sass/helpers/' as *;
+
 // Цвета
 $color-blue: #0d6efd;
 $color-blue-300: rgba(208, 214, 249, 1);
@@ -36,7 +38,7 @@ $border-radius-sm: 4px;
 $border-radius-md: 8px;
 $border-radius-lg: 16px;
 
-$border-width: 1px;
+$border-width: rem(1);
 $border-color: #dee2e6;
 
 // Тени
