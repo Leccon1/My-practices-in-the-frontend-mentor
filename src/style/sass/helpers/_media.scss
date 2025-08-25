@@ -1,7 +1,15 @@
+$breakpoint-xl: 1200px;
+
 $laptop: 1440.98px;
 $tablet: 1023.98px;
 $mobile: 767.98px;
 $mobile-s: 480.98px;
+
+@mixin interval {
+	@media (width <= $breakpoint-xl) {
+		@content;
+	}
+}
 
 @mixin laptop {
 	@media (width <= $laptop) {

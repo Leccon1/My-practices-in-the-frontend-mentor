@@ -6,11 +6,27 @@
 	flex-direction: row;
 	gap: rem(300);
 	margin: rem(417) rem(165) 0 rem(165);
+
+	@include interval {
+		gap: rem(200);
+		margin: rem(285) rem(85) 0 rem(85);
+	}
+
+	@include tablet {
+		align-items: center;
+		flex-direction: column;
+		gap: rem(24);
+		margin: rem(128) rem(40) 0 rem(40);
+	}
 	&__content {
 		display: flex;
 		flex-direction: column;
 		gap: rem(24);
 		text-transform: uppercase;
+
+		@include tablet {
+			align-items: center;
+		}
 	}
 	&__subtitle {
 		color: $color-blue-300;
@@ -33,6 +49,10 @@
 		line-height: rem(22);
 		text-align: left;
 		text-transform: lowercase;
+
+		@include tablet {
+			padding: 0 rem(88);
+		}
 	}
 	&__btn {
 		position: relative;
@@ -47,6 +67,10 @@
 		text-transform: uppercase;
 
 		transition: all $transition-normal;
+
+		@include tablet {
+			margin-top: rem(42);
+		}
 
 		@include hover {
 			transform: scale(1.03);
