@@ -20,7 +20,8 @@ body {
 	flex-direction: column;
 }
 
-header {
+p {
+	font-size: fluid(18, 15);
 }
 
 .container {
@@ -35,4 +36,12 @@ header {
 
 body.homepage {
 	background-image: url('@assets/images/home/background-home-desktop.jpg');
+
+	@include tablet {
+		background-image: url('@assets/images/home/background-home-tablet.jpg');
+	}
+
+	@include mobile {
+		background-image: url('@assets/images/home/background-home-mobile.jpg');
+	}
 }
