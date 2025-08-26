@@ -46,12 +46,15 @@
 		color: $color-blue-300;
 		font-family: $font-family-barlow;
 		font-size: rem(18);
-		line-height: rem(22);
+
 		text-align: left;
 		text-transform: lowercase;
+		line-height: rem(35);
 
 		@include tablet {
-			padding: 0 rem(88);
+            text-align: center;
+			width: rem(512);
+			line-height: rem(30);
 		}
 	}
 	&__btn {
