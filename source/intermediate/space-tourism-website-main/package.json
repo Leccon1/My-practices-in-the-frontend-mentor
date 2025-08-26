@@ -3,6 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+    "homepage": "https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/",
     "main": "./src/js/main.js",
 	"scripts": {
 		"dev": "vite",
