@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import path, { resolve } from 'path'
-base: 'My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/'
 
 export default defineConfig({
+	base: 'My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/',
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
