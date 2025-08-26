@@ -1,0 +1,105 @@
+@use '@style/sass/helpers' as *;
+@use '@style/sass/var' as *;
+
+.hero {
+	display: flex;
+	flex-direction: row;
+	gap: fluid(40, 300);
+	margin: fluid(128, 417, 1024, 1440) fluid(40, 165) 0;
+
+	@include tablet {
+		align-items: center;
+		flex-direction: column;
+		gap: rem(24);
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: fluid(12, 24);
+		text-transform: uppercase;
+
+		@include tablet {
+			align-items: center;
+		}
+	}
+
+	&__subtitle {
+		color: $color-blue-300;
+		font-family: $font-family-barlow-condensed;
+		font-size: fluid(16, 28, 768, 1024);
+		line-height: fluid(16, 19);
+		letter-spacing: fluid(2, 4);
+		color: $color-white;
+	}
+
+	&__title {
+		color: $color-white;
+		font-family: $font-family-bellefair;
+		font-weight: $font-weight-normal;
+		font-size: fluid(80, 144, 768, 1024);
+	}
+
+	&__description {
+		color: $color-blue-300;
+		font-family: $font-family-barlow;
+		font-size: fluid(15, 18);
+		line-height: fluid(22, 35);
+		text-align: left;
+		text-transform: lowercase;
+
+		@include tablet {
+			text-align: center;
+			width: rem(512);
+			line-height: rem(30);
+		}
+
+		@include mobile {
+			width: rem(330);
+		}
+	}
+
+	&__btn {
+		position: relative;
+		aspect-ratio: 1 / 1;
+		width: fluid(144, 272, 768, 1024);
+		height: fluid(144, 272, 768, 1024);
+		border-radius: 50%;
+		background-color: $color-white;
+		color: $color-blue-900;
+		font-family: $font-family-bellefair;
+		font-size: fluid(18, 32);
+		text-transform: uppercase;
+
+		transition: all $transition-normal;
+
+		@include tablet {
+			margin-top: rem(42);
+		}
+
+		@include hover {
+			transform: scale(1.03);
+		}
+		&:active {
+			transform: scale(1.01);
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background: inherit;
+			transform: translate(-50%, -50%) scale(1);
+			opacity: 0;
+			transition: transform 0.6s ease, opacity 0.6s ease;
+		}
+
+		&:hover::after {
+			transform: translate(-50%, -50%) scale(1.6);
+			opacity: 0.18;
+		}
+	}
+}

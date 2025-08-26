@@ -1,0 +1,165 @@
+@use '@style/sass/var' as *;
+@use '@style/sass/helpers/' as *;
+
+.header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	padding-left: rem(64);
+
+	@include interval-lg {
+		padding: rem(24) rem(64) 0 rem(64);
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: rem(176);
+		width: calc(100% - rem(800));
+		height: $border-width;
+		background-color: $color-white;
+		opacity: 0.25;
+		z-index: 100;
+
+		@include tablet {
+			display: none;
+		}
+	}
+
+	.burger {
+		display: none;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 28px;
+		height: 20px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		z-index: 15;
+
+		transition: transform $transition-normal, z-index 0s 0.3s;
+
+		span {
+			display: block;
+			height: 3px;
+			width: 100%;
+			background: $color-blue-300;
+			border-radius: 2px;
+			transition: 0.3s;
+		}
+
+		@include interval-lg {
+			display: flex;
+		}
+
+		&.active span:nth-child(1) {
+			transform: rotate(45deg) translate(5px, 5px);
+		}
+		&.active span:nth-child(2) {
+			opacity: 0;
+		}
+		&.active span:nth-child(3) {
+			transform: rotate(-45deg) translate(6px, -6px);
+		}
+	}
+}
+.nav {
+	backdrop-filter: blur(80px);
+	background: rgba(255, 255, 255, 0.05);
+	display: flex;
+	align-items: center;
+	z-index: 10;
+
+	@include interval-lg {
+		position: fixed;
+		backdrop-filter: blur(80px);
+		background: rgba(11, 13, 23, 0.15);
+		top: 0;
+		right: -100%;
+		width: rem(254);
+		height: 100vh;
+		padding: rem(20) rem(32);
+		align-items: flex-start;
+		transition: right $transition-normal;
+
+		&.active {
+			right: 0 !important;
+		}
+
+		&.active ~ .burger {
+			z-index: 30;
+			transition-delay: 0.3s;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: rem(48);
+
+		@include interval-lg {
+			flex-direction: column;
+			gap: rem(32);
+			margin-top: rem(113);
+		}
+
+		&:last-child {
+			margin-right: rem(64);
+
+			@include interval-lg {
+				margin-right: 0;
+			}
+		}
+		&:first-child {
+			margin-left: rem(160);
+
+			@include interval-lg {
+				margin-left: 0;
+			}
+		}
+	}
+	&__item {
+		position: relative;
+		padding: rem(39) 0;
+
+		@include interval-lg {
+			padding: 0;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 0;
+			height: 2px;
+			background-color: $color-white;
+			transform: translateX(-50%);
+			transition: width $transition-fast;
+		}
+
+		@include hover {
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+	&__link {
+		color: $color-white;
+		text-transform: uppercase;
+		letter-spacing: rem(3);
+		font-size: rem(16);
+		font-family: $font-family-barlow-condensed;
+		font-weight: $font-weight-normal;
+
+		span {
+			font-weight: $font-weight-bold;
+			margin-right: rem(6);
+			letter-spacing: normal;
+		}
+	}
+}
