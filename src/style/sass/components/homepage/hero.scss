@@ -4,69 +4,71 @@
 .hero {
 	display: flex;
 	flex-direction: row;
-	gap: rem(300);
-	margin: rem(417) rem(165) 0 rem(165);
-
-	@include interval {
-		gap: rem(200);
-		margin: rem(285) rem(85) 0 rem(85);
-	}
+	gap: fluid(40, 300);
+	margin: fluid(128, 417, 1024, 1440) fluid(40, 165) 0;
 
 	@include tablet {
 		align-items: center;
 		flex-direction: column;
 		gap: rem(24);
-		margin: rem(128) rem(40) 0 rem(40);
 	}
+
 	&__content {
 		display: flex;
 		flex-direction: column;
-		gap: rem(24);
+		gap: fluid(12, 24);
 		text-transform: uppercase;
 
 		@include tablet {
 			align-items: center;
 		}
 	}
+
 	&__subtitle {
 		color: $color-blue-300;
 		font-family: $font-family-barlow-condensed;
-		font-size: rem(28);
-		line-height: 19px;
-		letter-spacing: rem(4);
+		font-size: fluid(16, 28, 768, 1024);
+		line-height: fluid(16, 19);
+		letter-spacing: fluid(2, 4);
 		color: $color-white;
 	}
+
 	&__title {
 		color: $color-white;
 		font-family: $font-family-bellefair;
 		font-weight: $font-weight-normal;
-		font-size: rem(144);
+		font-size: fluid(80, 144, 768, 1024);
 	}
+
 	&__description {
 		color: $color-blue-300;
 		font-family: $font-family-barlow;
-		font-size: rem(18);
-
+		font-size: fluid(15, 18);
+		line-height: fluid(22, 35);
 		text-align: left;
 		text-transform: lowercase;
-		line-height: rem(35);
 
 		@include tablet {
-            text-align: center;
+			text-align: center;
 			width: rem(512);
 			line-height: rem(30);
 		}
+
+		@include mobile {
+			width: rem(330);
+		}
 	}
+
 	&__btn {
 		position: relative;
 		aspect-ratio: 1 / 1;
-		width: 272px;
-		height: 272px;
+		width: fluid(144, 272, 768, 1024);
+		height: fluid(144, 272, 768, 1024);
 		border-radius: 50%;
 		background-color: $color-white;
 		color: $color-blue-900;
 		font-family: $font-family-bellefair;
-		font-size: rem(32);
+		font-size: fluid(18, 32);
 		text-transform: uppercase;
 
 		transition: all $transition-normal;
