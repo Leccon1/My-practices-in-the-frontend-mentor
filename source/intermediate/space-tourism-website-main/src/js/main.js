@@ -3,7 +3,7 @@ import data from '../data/data.json'
 // Переход на страницу destinations через кнопку
 const exploreBtn = document.getElementById('exploreBtn')
 exploreBtn.addEventListener('click', () => {
-	window.location.href = '/pages/destinations.html'
+	window.location.href = './pages/destinations.html'
 })
 
 function renderHome() {
@@ -18,9 +18,7 @@ function renderHome() {
 	descriptionEl.textContent = data.home[0].description
 }
 
-function renderDestinations() {
-    
-}
+function renderDestinations() {}
 
 const page = document.body.dataset.page
 

@@ -11,4 +11,12 @@ export default defineConfig({
 			'@assets': path.resolve(__dirname, './src/assets'),
 		},
 	},
+	build: {
+		rollupOptions: {
+			input: {
+				main: resolve(__dirname, 'index.html'),
+				destinations: resolve(__dirname, 'pages/destinations.html'),
+			},
+		},
+	},
 })
