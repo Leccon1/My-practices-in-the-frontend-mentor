@@ -1,0 +1,16 @@
+@use '@style/sass/var' as *;
+@use '@style/sass/helpers/' as *;
+
+body.homepage {
+	.hero {
+		margin: fluid(128, 417, 1024, 1440) fluid(40, 165) 0;
+
+		@include mobile {
+			margin-top: rem(48);
+		}
+
+		&__title {
+			font-size: fluid(80, 144, 768, 1024);
+		}
+	}
+}

@@ -4,8 +4,7 @@
 @use './utilites';
 @use './var';
 
-@use './components/homepage/hero.scss';
-// @use './components/destination';
-// @use './components/crew';
-// @use './components/technology';
 @use './components/common/header.scss';
+@use './components/common/hero.scss';
+@use './components/homepage/hero-home.scss';
+@use './components/destination/hero-destinations.scss';

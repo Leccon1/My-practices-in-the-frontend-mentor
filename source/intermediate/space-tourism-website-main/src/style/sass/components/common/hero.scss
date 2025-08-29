@@ -1,11 +1,11 @@
-@use '@style/sass/helpers' as *;
 @use '@style/sass/var' as *;
+@use '@style/sass/helpers/' as *;
 
 .hero {
 	display: flex;
 	flex-direction: row;
 	gap: fluid(40, 300);
-	margin: fluid(128, 417, 1024, 1440) fluid(40, 165) 0;
+	margin: 0;
 
 	@include tablet {
 		align-items: center;
@@ -25,19 +25,17 @@
 	}
 
 	&__subtitle {
-		color: $color-blue-300;
+		color: $color-white;
 		font-family: $font-family-barlow-condensed;
 		font-size: fluid(16, 28, 768, 1024);
 		line-height: fluid(16, 19);
 		letter-spacing: fluid(2, 4);
-		color: $color-white;
 	}
 
 	&__title {
 		color: $color-white;
 		font-family: $font-family-bellefair;
 		font-weight: $font-weight-normal;
-		font-size: fluid(80, 144, 768, 1024);
 	}
 
 	&__description {

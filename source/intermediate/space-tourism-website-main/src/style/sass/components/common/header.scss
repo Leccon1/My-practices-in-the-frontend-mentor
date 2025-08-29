@@ -9,21 +9,17 @@
 	flex-direction: row;
 	padding-left: rem(64);
 
-	@include interval-lg {
+	@include mobile {
 		padding: rem(24) rem(64) 0 rem(64);
 	}
 
 	@include tablet-above {
 		&::before {
-			content: '';
-			position: absolute;
+			@include hr;
+
 			top: 50%;
 			left: rem(176);
 			width: calc(100% - rem(800));
-			height: $border-width;
-			background-color: $color-white;
-			opacity: 0.25;
-			z-index: 100;
 
 			@include tablet {
 				display: none;
@@ -40,7 +36,7 @@
 		background: none;
 		border: none;
 		cursor: pointer;
-		z-index: 15;
+		z-index: $z-index-modal;
 
 		transition: transform $transition-normal, z-index 0s 0.3s;
 
@@ -53,7 +49,7 @@
 			transition: 0.3s;
 		}
 
-		@include interval-lg {
+		@include mobile {
 			display: flex;
 		}
 
@@ -73,9 +69,9 @@
 	background: rgba(255, 255, 255, 0.05);
 	display: flex;
 	align-items: center;
-	z-index: 10;
+	z-index: $z-index-header;
 
-	@include interval-lg {
+	@include mobile {
 		position: fixed;
 		backdrop-filter: blur(80px);
 		background: rgba(11, 13, 23, 0.15);
@@ -92,7 +88,7 @@
 		}
 
 		&.active ~ .burger {
-			z-index: 30;
+			z-index: $z-index-modal;
 			transition-delay: 0.3s;
 		}
 	}
@@ -103,7 +99,7 @@
 		justify-content: space-between;
 		gap: rem(48);
 
-		@include interval-lg {
+		@include mobile {
 			flex-direction: column;
 			gap: rem(32);
 			margin-top: rem(113);
@@ -112,14 +108,18 @@
 		&:last-child {
 			margin-right: rem(64);
 
-			@include interval-lg {
-				margin-right: 0;
+			@include tablet {
+				margin-right: rem(40);
 			}
 		}
 		&:first-child {
 			margin-left: rem(160);
 
-			@include interval-lg {
+			@include tablet {
+				margin-left: rem(75);
+			}
+
+			@include mobile {
 				margin-left: 0;
 			}
 		}
@@ -127,9 +127,8 @@
 	&__item {
 		position: relative;
 		padding: rem(39) 0;
-		cursor: pointer;
 
-		@include interval-lg {
+		@include mobile {
 			padding: 0;
 		}
 
@@ -139,7 +138,7 @@
 			bottom: 0;
 			left: 50%;
 			width: 0;
-			height: 2px;
+			height: rem(2);
 			background-color: $color-white;
 			transform: translateX(-50%);
 			transition: width $transition-fast;

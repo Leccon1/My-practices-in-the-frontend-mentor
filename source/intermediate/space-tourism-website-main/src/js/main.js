@@ -1,18 +1,34 @@
-// import '../style/sass/main.scss'
-import { includeHTML } from './include.js'
+import data from '../data/data.json'
 
-Promise.all([
-	includeHTML('#head', 'public/common/head.html'),
-	includeHTML('#header', 'public/common/header.html'),
-]).then(() => {
-	import('/src/style/sass/main.scss')
-
-	const nav = document.querySelector('.nav')
-	const burger = document.querySelector('.burger')
-	if (burger && nav) {
-		burger.addEventListener('click', () => {
-			nav.classList.toggle('active')
-			burger.classList.toggle('active')
-		})
-	}
+// Переход на страницу destinations через кнопку
+const exploreBtn = document.getElementById('exploreBtn')
+exploreBtn.addEventListener('click', () => {
+	window.location.href = '/pages/destinations.html'
 })
+
+function renderHome() {
+	const subTitleEl = document.querySelector('.hero__subtitle')
+	const titleEl = document.querySelector('.hero__title')
+	const descriptionEl = document.querySelector('.hero__description')
+
+	if (!subTitleEl || !titleEl || !descriptionEl) return
+
+	subTitleEl.textContent = data.home[0].subtitle
+	titleEl.textContent = data.home[0].title
+	descriptionEl.textContent = data.home[0].description
+}
+
+function renderDestinations() {
+    
+}
+
+const page = document.body.dataset.page
+
+switch (page) {
+	case 'home':
+		renderHome()
+		break
+	case 'destinations':
+		renderDestinations()
+		break
+}
