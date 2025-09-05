@@ -1,75 +1,113 @@
 @use '@style/sass/var' as *;
 @use '@style/sass/helpers/' as *;
 
-body.destinations {
-	background-position: top;
-	.hero {
-		margin: fluid(40, 48, 1024, 1440) fluid(40, 165);
-		flex-direction: column;
-		gap: fluid(72, 167, 375, 1440);
+// Глобальные стили
+.hero {
+	margin: fluid(40, 48, 1024, 1440) fluid(40, 165);
+	flex-direction: column;
+	gap: fluid(72, 150, 375, 1440);
+
+	@include tablet {
+		gap: rem(100);
+		margin-bottom: rem(55);
+	}
+	@include mobile {
+		gap: rem(48);
+		margin-bottom: rem(24);
+	}
+
+	&__intro {
+		align-self: flex-start;
+		display: flex;
+		flex-direction: row;
+		gap: rem(24);
+
+		font-family: $font-family-barlow-condensed;
+
+		@include mobile {
+			align-self: center;
+		}
+	}
+
+	&__label {
+		color: $color-white;
+		opacity: 0.25;
+		font-size: fluid(16, 28, 375, 1440);
+		font-weight: $font-weight-bold;
+		letter-spacing: rem(5);
+	}
+
+	&__title {
+		font-size: fluid(16, 28, 375, 1440);
+	}
+
+	&__content {
+		flex-direction: row;
+		gap: fluid(48, 180, 375, 1920);
 
 		@include tablet {
-			gap: rem(100);
-			margin-bottom: rem(55);
+			flex-direction: column;
 		}
-		@include mobile {
-			gap: rem(48);
-			margin-bottom: rem(24);
+	}
+
+	&__image {
+		width: fluid(228, 445, 375, 1440);
+		flex: 1;
+	}
+
+	&__name {
+		font-family: $font-family-bellefair;
+		font-size: fluid(56, 96, 375, 1440);
+		font-weight: $font-weight-normal;
+	}
+
+	&__description {
+		color: $color-blue-300;
+		font-family: $font-family-barlow;
+		font-size: fluid(15, 18);
+		line-height: fluid(22, 35);
+		text-align: left;
+		text-transform: lowercase;
+
+		@include tablet {
+			text-align: center;
+			width: rem(512);
+			line-height: rem(30);
 		}
 
-		&__intro {
-			align-self: flex-start;
+		@include mobile {
+			width: rem(330);
+		}
+	}
+}
+
+// Уникальные стили
+body.destinations {
+	background-position: top;
+
+	.hero {
+		&__stats {
 			display: flex;
 			flex-direction: row;
-			gap: rem(24);
-
-			font-family: $font-family-barlow-condensed;
+			gap: rem(125);
 
 			@include mobile {
-				align-self: center;
-			}
-		}
-		&__label {
-			color: $color-white;
-			opacity: 0.25;
-			font-size: fluid(16, 28, 375, 1440);
-			font-weight: $font-weight-bold;
-			letter-spacing: rem(5);
-		}
-		&__title {
-			font-size: fluid(16, 28, 375, 1440);
-		}
-		&__content {
-			flex-direction: row;
-			gap: fluid(48, 180, 375, 1920);
-
-			@include tablet {
 				flex-direction: column;
+				gap: rem(24);
 			}
 		}
-		&__image {
-			width: fluid(228, 445, 375, 1440);
-			flex: 1;
-		}
-		&__name {
-			font-family: $font-family-bellefair;
-			font-size: fluid(56, 96, 375, 1440);
-			font-weight: $font-weight-normal;
-		}
+
 		&__description {
-		}
-		&__stats {
 			position: relative;
-			display: flex;
-			flex-direction: row;
-			gap: rem(84);
-			&::before {
+
+			&::after {
 				@include hr;
 
-				top: 0;
+				bottom: -35px;
 			}
 		}
 	}
+
 	.destinations {
 		&__info {
 			display: flex;
@@ -95,27 +133,11 @@ body.destinations {
 
 				transition: width $transition-normal;
 
-				&::after {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					width: 100%;
-					height: rem(2);
-					background-color: $color-white;
-					transform: scaleX(0);
-					transform-origin: left;
-					transition: transform 0.3s ease;
-				}
-
-				@include hover {
-					&::after {
-						transform: scaleX(1);
-					}
-				}
+				@include underline-slide;
 			}
 		}
 	}
+
 	.stat {
 		display: flex;
 		flex-direction: column;
@@ -123,6 +145,16 @@ body.destinations {
 		text-align: left;
 		text-transform: uppercase;
 		margin-top: rem(40);
+
+		@include mobile {
+			text-align: center;
+			margin-top: 0;
+
+			&:first-child {
+				margin-top: rem(24);
+			}
+		}
+
 		&__label {
 			font-family: $font-family-barlow;
 			font-size: rem(14);

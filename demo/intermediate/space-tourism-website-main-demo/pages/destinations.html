@@ -7,17 +7,17 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/assets/favicon-32x32-DQjEQYWa.png"
+			href="/space-tourism-website-main-demo/assets/favicon-32x32-DQjEQYWa.png"
 		/>
-		<title>Frontend Mentor | Space tourism website</title>
-		<script type="module" crossorigin src="/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/assets/nav-BQ0t_DiD.js"></script>
-		<link rel="stylesheet" crossorigin href="/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/assets/nav-C1QTyk4K.css">
+		<title>Frontend Mentor | Space tourism website | Destinations</title>
+		<script type="module" crossorigin src="/space-tourism-website-main-demo/assets/nav-Ns_cRGMx.js"></script>
+		<link rel="stylesheet" crossorigin href="/space-tourism-website-main-demo/assets/nav-DgdocsBh.css">
 	</head>
 	<body class="destinations" data-page="destinations">
 		<div class="container">
 			<header class="header">
 				<div class="header__logo">
-					<a href="/index.html"
+					<a href="../index.html"
 						><img
 							src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='48'%20height='48'%3e%3cg%20fill='none'%20fill-rule='evenodd'%3e%3ccircle%20cx='24'%20cy='24'%20r='24'%20fill='%23FFF'/%3e%3cpath%20fill='%230B0D17'%20d='M24%200c0%2016-8%2024-24%2024%2015.718.114%2023.718%208.114%2024%2024%200-16%208-24%2024-24-16%200-24-8-24-24z'/%3e%3c/g%3e%3c/svg%3e"
 							alt="Space Tourism logo"
@@ -26,17 +26,19 @@
 				<nav class="nav">
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a href="/index.html" class="nav__link active">
+							<a href="../index.html" class="nav__link active">
 								<span>00</span> Home
 							</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link active">
+							<a href="./destinations.html" class="nav__link active">
 								<span>01</span> Destination
 							</a>
 						</li>
 						<li class="nav__item">
-							<a href="#" class="nav__link active"> <span>02</span> Crew </a>
+							<a href="./crew.html" class="nav__link active">
+								<span>02</span> Crew
+							</a>
 						</li>
 						<li class="nav__item">
 							<a href="#" class="nav__link active">
@@ -60,10 +62,7 @@
 
 				<section class="hero__content">
 					<div class="hero__image">
-						<img
-							src="/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/assets/image-moon-C-LWT-Wp.webp"
-							alt="Planet Name"
-						/>
+						<img alt="Planet Name" data-image />
 					</div>
 
 					<div class="destinations__info">
@@ -74,22 +73,17 @@
 							<button data-planet="titan">Titan</button>
 						</nav>
 
-						<h2 class="hero__name">Moon</h2>
-						<p class="hero__description">
-							See our planet as you’ve never seen it before. A perfect relaxing
-							trip away to help regain perspective and come back refreshed.
-							While you’re there, take in some history by visiting the Luna 2
-							and Apollo 11 landing sites.
-						</p>
+						<h2 class="hero__name" data-name></h2>
+						<p class="hero__description" data-description></p>
 
 						<div class="hero__stats">
 							<div class="stat">
 								<p class="stat__label">AVG. DISTANCE</p>
-								<p class="stat__value">384,400 km</p>
+								<p class="stat__value" data-distance></p>
 							</div>
 							<div class="stat">
 								<p class="stat__label">EST. TRAVEL TIME</p>
-								<p class="stat__value">3 days</p>
+								<p class="stat__value" data-travel></p>
 							</div>
 						</div>
 					</div>

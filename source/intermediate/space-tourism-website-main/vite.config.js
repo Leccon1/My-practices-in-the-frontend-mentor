@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import path, { resolve } from 'path'
 
 export default defineConfig({
-	base: 'My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/',
+	base: '/space-tourism-website-main-demo/',
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
@@ -16,6 +16,7 @@ export default defineConfig({
 			input: {
 				main: resolve(__dirname, 'index.html'),
 				destinations: resolve(__dirname, 'pages/destinations.html'),
+				crew: resolve(__dirname, 'pages/crew.html'),
 			},
 		},
 	},

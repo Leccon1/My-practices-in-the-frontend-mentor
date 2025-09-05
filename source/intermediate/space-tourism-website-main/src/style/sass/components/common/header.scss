@@ -132,21 +132,23 @@
 			padding: 0;
 		}
 
-		&::after {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			width: 0;
-			height: rem(2);
-			background-color: $color-white;
-			transform: translateX(-50%);
-			transition: width $transition-fast;
-		}
-
-		@include hover {
+		@include tablet-above {
 			&::after {
-				width: 100%;
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				width: 0;
+				height: rem(2);
+				background-color: $color-white;
+				transform: translateX(-50%);
+				transition: width $transition-fast;
+			}
+
+			@include hover {
+				&::after {
+					width: 100%;
+				}
 			}
 		}
 	}
