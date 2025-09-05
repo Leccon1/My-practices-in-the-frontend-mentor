@@ -79,11 +79,6 @@ function renderCrew() {
 		},
 	}
 
-	if (!selectors) {
-		console.log('some elements not found')
-		return
-	}
-
 	const dots = document.querySelectorAll('.hero__dot')
 
 	function updateDots(index) {
