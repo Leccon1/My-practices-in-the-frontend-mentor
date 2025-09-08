@@ -3,6 +3,14 @@ export function initSwipeListener(onSwipeLeft, onSwipeRight) {
 
 	const heroContent = document.querySelector('.hero__content')
 
+	function handleSwipeLeft() {
+		onSwipeLeft()
+	}
+
+	function handleSwipeRight() {
+		onSwipeRight()
+	}
+
 	heroContent.addEventListener('touchstart', e => {
 		const startX = e.touches[0].clientX
 		const startY = e.touches[0].clientY
@@ -21,13 +29,24 @@ export function initSwipeListener(onSwipeLeft, onSwipeRight) {
 					Math.abs(deltaY) < swipeThreshold
 				) {
 					if (deltaX > 0) {
-						onSwipeRight()
+						handleSwipeRight()
 					} else {
-						onSwipeLeft()
+						handleSwipeLeft()
 					}
 				}
 			},
 			{ once: true }
 		)
+	})
+
+	document.addEventListener('keydown', e => {
+		switch (e.key) {
+			case 'ArrowLeft':
+				handleSwipeLeft()
+				break
+			case 'ArrowRight':
+				handleSwipeRight()
+				break
+		}
 	})
 }

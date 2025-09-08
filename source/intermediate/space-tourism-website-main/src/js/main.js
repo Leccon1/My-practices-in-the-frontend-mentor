@@ -122,6 +122,56 @@ function renderCrew() {
 	initSwipeListener(onSwipeLeft, onSwipeRight)
 }
 
+function renderTechnology() {
+	const selectors = {
+		nameEl: document.querySelector('[data-name]'),
+		descEl: document.querySelector('[data-desc]'),
+		imageEl: document.querySelector('[data-image]'),
+	}
+
+	const buttons = document.querySelectorAll('[data-tech-name]')
+
+	// Контент по умолчанию
+	renderContent({
+		dataItem: data.technology[0],
+		selectors,
+	})
+
+	// Инициализация кнопок для смены контента
+	buttons.forEach(btn => {
+		btn.addEventListener('click', () => {
+			btn.classList.add('tech-btn--active')
+			buttons.forEach(b => {
+				if (b !== btn) {
+					b.classList.remove('tech-btn--active')
+				}
+			})
+
+			const techName = btn.dataset.techName
+			const techData = data.technology.find(
+				t => t.name.toLowerCase() === techName.toLowerCase()
+			)
+
+			if (!techData) {
+				return
+			}
+
+			renderContent({
+				dataItem: techData,
+				selectors,
+			})
+		})
+	})
+
+	const screenWidth = window.innerWidth
+
+	data.technology.forEach(item => {
+		if (screenWidth <= 1024 && screenWidth >= 768) {
+			item.images.portrait = item.images.landscape
+		}
+	})
+}
+
 const page = document.body.dataset.page
 
 switch (page) {
@@ -133,6 +183,9 @@ switch (page) {
 		break
 	case 'crew':
 		renderCrew()
+		break
+	case 'technology':
+		renderTechnology()
 		break
 }
 
