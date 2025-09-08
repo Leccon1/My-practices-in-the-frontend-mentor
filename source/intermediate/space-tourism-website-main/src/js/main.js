@@ -188,5 +188,3 @@ switch (page) {
 		renderTechnology()
 		break
 }
-
-console.log(page)
