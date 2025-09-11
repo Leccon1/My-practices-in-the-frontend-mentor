@@ -37,6 +37,16 @@
 
 		width: rem(40);
 		height: rem(40);
+
+		transition: background-color $transition-fast;
+
+		@include hover {
+			background-color: $color-orange-500;
+		}
+
+		&--active {
+			background-color: $color-white;
+		}
 	}
 	&__button {
 		width: 100%;
@@ -49,5 +59,11 @@
 		text-transform: uppercase;
 		letter-spacing: rem(2);
 		font-weight: $font-weight-medium;
+
+		transition: background-color $transition-fast;
+
+		@include hover {
+			background-color: $color-white;
+		}
 	}
 }
