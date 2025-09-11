@@ -1,6 +1,14 @@
-// Цвета
+// Цвета (primary)
+$color-orange-500: hsl(25, 97%, 53%);
+
+// Цвета (neutral)
+$color-grey-500: hsl(217, 12%, 63%);
+$color-grey-900: hsl(213, 19%, 18%);
+$color-grey-950: hsl(216, 12%, 8%);
+
+// Цвета (base)
 $color-blue: #0d6efd;
-$color-grey: #6c757d;
+$color-dark-grey: hsl(207, 18%, 22%);
 $color-success: #198754;
 $color-danger: #dc3545;
 $color-warning: #ffc107;
@@ -11,7 +19,8 @@ $color-white: #ffffff;
 $color-black: #000000;
 
 // Шрифты
-$font-family-base: 'Inter', sans-serif;
+$font-family-base: 'Overpass', sans-serif;
+$font-family-alt: 'Inter', sans-serif;
 $font-size-base: 1rem;
 $font-size-sm: 0.875rem;
 $font-size-lg: 1.25rem;

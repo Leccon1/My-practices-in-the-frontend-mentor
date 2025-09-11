@@ -1,0 +1,53 @@
+@use '../variables' as *;
+@use '../helpers/' as *;
+
+.card {
+	width: rem(340);
+
+	background-color: $color-grey-900;
+	padding: rem(28);
+	border-radius: rem(24);
+
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: rem(24);
+
+	&__logo-image {
+	}
+	&__title {
+	}
+	&__description {
+		color: $color-grey-500;
+		font-weight: $font-weight-normal;
+	}
+	&__rating {
+		width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: rem(20);
+	}
+	&__rating-button {
+		background-color: $color-dark-grey;
+
+		aspect-ratio: 1 / 1;
+		border-radius: 50%;
+
+		width: rem(40);
+		height: rem(40);
+	}
+	&__button {
+		width: 100%;
+		padding: rem(12) 0;
+		border-radius: rem(24);
+
+		background-color: $color-orange-500;
+		color: $color-grey-950;
+
+		text-transform: uppercase;
+		letter-spacing: rem(2);
+		font-weight: $font-weight-medium;
+	}
+}
