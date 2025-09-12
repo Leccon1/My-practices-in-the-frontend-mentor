@@ -1,0 +1,20 @@
+{
+	"name": "interactive-raiting-card",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"homepage": "https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/interactive-rating-card/",
+	"main": "./src/js/main.js",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "gh-pages -d dist"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.21",
+		"gh-pages": "^6.3.0",
+		"sass": "^1.89.2",
+		"vite": "^7.0.4"
+	}
+}

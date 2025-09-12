@@ -1,0 +1,7 @@
+@use '../variables' as *;
+@use '../helpers/' as *;
+
+.card-description {
+	color: $color-grey-500;
+	font-weight: $font-weight-medium;
+}
