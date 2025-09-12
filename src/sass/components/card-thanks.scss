@@ -1,0 +1,15 @@
+@use '../variables' as *;
+@use '../helpers/' as *;
+
+.card-thanks {
+	&__raiting-text {
+		background-color: $color-dark-grey;
+		color: $color-orange-500;
+
+		padding: rem(10);
+		border-radius: rem(24);
+	}
+	&__description {
+		text-align: center;
+	}
+}

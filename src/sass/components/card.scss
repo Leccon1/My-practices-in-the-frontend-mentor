@@ -1,7 +1,7 @@
 @use '../variables' as *;
 @use '../helpers/' as *;
 
-.card {
+.card-raiting {
 	width: rem(340);
 
 	background-color: $color-grey-900;
@@ -18,10 +18,8 @@
 	&__title {
 	}
 	&__description {
-		color: $color-grey-500;
-		font-weight: $font-weight-normal;
 	}
-	&__rating {
+	&__stars {
 		width: 100%;
 
 		display: flex;
@@ -29,7 +27,7 @@
 		justify-content: center;
 		gap: rem(20);
 	}
-	&__rating-button {
+	&__stars-button {
 		background-color: $color-dark-grey;
 
 		aspect-ratio: 1 / 1;
@@ -41,14 +39,17 @@
 		transition: background-color $transition-fast;
 
 		@include hover {
-			background-color: $color-orange-500;
+			&:not(.card-raiting__stars-button--active) {
+				background-color: $color-orange-500;
+			}
 		}
 
 		&--active {
 			background-color: $color-white;
+			color: $color-grey-950;
 		}
 	}
-	&__button {
+	&__button-submit {
 		width: 100%;
 		padding: rem(12) 0;
 		border-radius: rem(24);

@@ -1,8 +1,10 @@
 {
-	"name": "my-standart",
+	"name": "interactive-raiting-card",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"homepage": "https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/interactive-rating-card/",
+	"main": "./src/js/main.js",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
