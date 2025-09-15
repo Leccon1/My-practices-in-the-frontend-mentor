@@ -1,6 +1,10 @@
 @use '@sass/variables' as *;
 @use '@sass/helpers' as *;
 
+html {
+	font-size: 62.5%; // 1rem = 10px
+}
+
 body {
 	position: relative;
 	background-color: $color-purple-100;
