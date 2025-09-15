@@ -1,4 +1,7 @@
 // Цвета
+$color-purple-100: hsl(275, 100%, 97%);
+$color-purple-600: hsl(292, 16%, 49%);
+$color-purple-950: hsl(292, 42%, 14%);
 $color-blue: #0d6efd;
 $color-grey: #6c757d;
 $color-success: #198754;
@@ -11,13 +14,14 @@ $color-white: #ffffff;
 $color-black: #000000;
 
 // Шрифты
-$font-family-base: 'Inter', sans-serif;
+$font-family-base: 'Work Sans', sans-serif;
 $font-size-base: 1rem;
 $font-size-sm: 0.875rem;
 $font-size-lg: 1.25rem;
 
 $font-weight-normal: 400;
 $font-weight-medium: 500;
+$font-weight-semibold: 600;
 $font-weight-bold: 700;
 
 // Отступы
