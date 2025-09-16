@@ -1,21 +1,66 @@
 @use '@sass/variables' as *;
 @use '@sass/helpers' as *;
 
-.container {
-}
 .card {
-	&__image {
-	}
+	max-width: rem(600);
+
+	background-color: $color-white;
+	color: $color-purple-950;
+
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: rem(25);
+
+	padding: rem(35);
+	border-radius: rem(24);
+
+	z-index: 10;
 	&__title {
+		font-size: rem(52);
 	}
 }
 .title-container {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: rem(15);
 }
 .faq {
+	font-size: rem(16);
+	overflow: hidden;
+
 	&__item {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+
+		padding: rem(30) 0;
+		border-bottom: $border-width solid $color-purple-100;
+
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	&__toogle {
+		transition: filter $transition-fast;
+		&:hover {
+			filter: saturate(65%);
+		}
 	}
 	&__question {
+		font-weight: $font-weight-bold;
+		list-style: none;
 	}
 	&__answer {
+		max-height: 0;
+		color: $color-purple-600;
+		overflow: hidden;
 	}
 }
