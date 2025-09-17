@@ -1,0 +1,113 @@
+@use '@sass/variables' as *;
+@use '@sass/helpers' as *;
+
+.card {
+	max-width: rem(600);
+
+	background-color: $color-white;
+	color: $color-purple-950;
+
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: rem(25);
+
+	padding: fluid(20, 40, 375, 1440);
+	border-radius: fluid(12, 24, 375, 1440);
+
+	z-index: 10;
+
+	@include mobile {
+		max-width: rem(340);
+	}
+
+	&__title {
+		font-size: rem(52);
+	}
+}
+.title-container {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: rem(15);
+}
+.faq {
+	font-size: rem(16);
+	overflow: hidden;
+
+	&__item {
+		max-height: rem(580);
+
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+
+		padding: rem(30) 0;
+		border-bottom: $border-width solid $color-purple-100;
+
+		transition: gap $transition-fast;
+
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+	&__header {
+		width: 100%;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+
+		overflow: hidden;
+		cursor: pointer;
+	}
+	&__toogle {
+		width: rem(24);
+		height: rem(24);
+
+		background-image: url('@images/icon-plus.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		transition: filter $transition-fast;
+
+		&.press {
+			background-image: url('@images/icon-minus.svg');
+		}
+
+		&:hover {
+			filter: saturate(65%);
+		}
+	}
+	&__question {
+		font-weight: $font-weight-bold;
+		list-style: none;
+
+		transition: color $transition-fast;
+
+		@include hover {
+			color: rgb(180, 0, 180);
+			cursor: pointer;
+		}
+
+		@include mobile {
+			width: 80%;
+		}
+	}
+	&__answer {
+		max-height: 0;
+		color: $color-purple-600;
+		overflow: hidden;
+
+		transition: max-height $transition-fast;
+	}
+
+	&__item.active .faq__answer {
+		max-height: rem(200);
+	}
+	&__item.active {
+		gap: rem(25);
+	}
+}
