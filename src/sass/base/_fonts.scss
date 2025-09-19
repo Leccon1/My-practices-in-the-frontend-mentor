@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Karla';
+	src: url('@assets/fonts/Karla-Bold.eot?#iefix') format('embedded-opentype'),
+		url('@assets/fonts/Karla-Bold.woff') format('woff'),
+		url('@assets/fonts/Karla-Bold.ttf') format('truetype'),
+		url('@assets/fonts/Karla-Bold.svg#Karla-Bold') format('svg');
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Karla';
+	src: url('@assets/fonts/Karla-Bold.eot?#iefix') format('embedded-opentype'),
+		url('@assets/fonts/Karla-Bold.woff') format('woff'),
+		url('@assets/fonts/Karla-Bold.ttf') format('truetype'),
+		url('@assets/fonts/Karla-Bold.svg#Karla-Bold') format('svg');
+	font-style: normal;
+	font-weight: 400;
+}
