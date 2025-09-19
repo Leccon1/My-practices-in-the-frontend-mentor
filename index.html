@@ -11,7 +11,7 @@
 			<h2 class="form__title">Contact Us</h2>
 			<div class="form__names">
 				<div class="form__first-name">
-					<label for="first-name">First Name</label>
+					<label for="first-name">First Name <span>*</span></label>
 					<input
 						type="text"
 						id="first-name"
@@ -21,7 +21,7 @@
 					/>
 				</div>
 				<div class="form__last-name">
-					<label for="last-name">Last Name</label>
+					<label for="last-name">Last Name <span>*</span></label>
 					<input
 						type="text"
 						name="last-name"
@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div class="form__email">
-				<label for="email">Email Address</label>
+				<label for="email">Email Address <span>*</span></label>
 				<input
 					type="email"
 					name="email"
@@ -42,7 +42,7 @@
 				/>
 			</div>
 			<div class="form__type">
-				<label for="type">Query Type</label>
+				<label for="type">Query Type <span>*</span></label>
 				<div class="form__type-list">
 					<label class="form__type-item">
 						<input type="radio" name="type" id="type-1" required />
@@ -55,7 +55,7 @@
 				</div>
 			</div>
 			<div class="form__message">
-				<label for="message">Message</label>
+				<label for="message">Message <span>*</span></label>
 				<textarea
 					class="form__message"
 					name="message"
@@ -67,7 +67,7 @@
 			</div>
 			<label class="form__agreement">
 				<input type="checkbox" name="agreement" id="agreement" required />
-				I consent to being contacted by the team
+				I consent to being contacted by the team *
 			</label>
 			<button class="form__button-submit" type="submit">Submit</button>
 		</form>

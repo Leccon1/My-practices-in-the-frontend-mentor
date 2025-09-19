@@ -24,8 +24,3 @@
 @mixin outline {
 	outline: rem(1) solid $color-grey-500;
 }
-
-@mixin after-asterisk {
-	position: absolute;
-	content: '*';
-}
