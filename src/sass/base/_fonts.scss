@@ -2,18 +2,18 @@
 	font-family: 'Karla';
 	src: url('@assets/fonts/Karla-Bold.eot?#iefix') format('embedded-opentype'),
 		url('@assets/fonts/Karla-Bold.woff') format('woff'),
-		url('@assets/fonts/Karla-Bold.ttf') format('truetype'),
-		url('@assets/fonts/Karla-Bold.svg#Karla-Bold') format('svg');
+		url('@assets/fonts/static/Karla-Bold.ttf') format('truetype'),
+		url('@assets/fonts/static/Karla-Bold.svg#Karla-Bold') format('svg');
 	font-style: normal;
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: 'Karla';
-	src: url('@assets/fonts/Karla-Bold.eot?#iefix') format('embedded-opentype'),
-		url('@assets/fonts/Karla-Bold.woff') format('woff'),
-		url('@assets/fonts/Karla-Bold.ttf') format('truetype'),
-		url('@assets/fonts/Karla-Bold.svg#Karla-Bold') format('svg');
+	src: url('@assets/fonts/Karla-Regular.eot?#iefix') format('embedded-opentype'),
+		url('@assets/fonts/static/Karla-Regular.woff') format('woff'),
+		url('@assets/fonts/static/Karla-Regular.ttf') format('truetype'),
+		url('@assets/fonts/static/Karla-Regular.svg#Karla-Regular') format('svg');
 	font-style: normal;
 	font-weight: 400;
 }
