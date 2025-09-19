@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../helpers/' as *;
 
 html {
 	font-size: 62.5%; /* 1rem = 10px */
@@ -11,11 +12,23 @@ body {
 	height: 100vh;
 
 	background-color: $color-green-200;
-	color: $color-black;
+	color: $color-grey-900;
 
 	font-family: $font-family-base;
+	font-weight: $font-weight-normal;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+input,
+textarea,
+.form__type-item {
+	border: none;
+	border-radius: rem(4);
+
+    padding: rem(8) rem(12);
+
+	@include outline;
 }
