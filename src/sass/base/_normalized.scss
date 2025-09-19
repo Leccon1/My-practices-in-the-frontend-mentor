@@ -82,14 +82,6 @@ input[type='file'] {
 	max-width: 100%;
 }
 
-/* Фокус и активное состояние формы */
-input[type='text']:focus,
-textarea[type='text']:focus,
-button[type='button']:focus,
-select:focus {
-	outline: none; /* можно добавить стили фокуса для доступности */
-}
-
 button {
 	border: none;
 }
