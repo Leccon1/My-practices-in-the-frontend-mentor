@@ -4,9 +4,76 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Name Site</title>
+		<title>Contact Form</title>
 	</head>
-	<body class="" data-pages="">
+	<body>
+		<form class="form">
+			<h2 class="form__title">Contact Us</h2>
+			<div class="form__names">
+				<div class="form__first-name">
+					<label for="first-name">First Name</label>
+					<input
+						type="text"
+						id="first-name"
+						name="first-name"
+						autocomplete="given-name"
+						required
+					/>
+				</div>
+				<div class="form__last-name">
+					<label for="last-name">Last Name</label>
+					<input
+						type="text"
+						name="last-name"
+						id="last-name"
+						autocomplete="family-name"
+						required
+					/>
+				</div>
+			</div>
+			<label for="email">Email Address</label>
+			<input
+				type="email"
+				name="email"
+				id="email"
+				autocomplete="email"
+				required
+			/>
+			<div class="form__type">
+				<fieldset>
+					<label for="general-enquiry">General Enquiry</label>
+					<input
+						type="radio"
+						name="enquiry-type"
+						id="general-enquiry"
+						value="general-enquiry"
+					/>
+				</fieldset>
+				<fieldset>
+					<legend>Query Type</legend>
+					<label>
+						<input type="radio" name="enquiry-type" value="general" required />
+						General Enquiry
+					</label>
+					<label>
+						<input type="radio" name="enquiry-type" value="support" />
+						Support Request
+					</label>
+				</fieldset>
+			</div>
+			<textarea
+				name="message"
+				id="message"
+				autocomplete="on"
+				spellcheck="true"
+				required
+			></textarea>
+			<label>
+				<input type="checkbox" name="agreement" id="agreement" required />
+				I consent to being contacted by the team
+			</label>
+			<button type="submit">Submit</button>
+		</form>
 		<script type="module" src="./src/js/main.js"></script>
 	</body>
 </html>
