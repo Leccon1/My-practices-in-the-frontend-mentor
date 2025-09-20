@@ -9,7 +9,7 @@ html {
 
 body {
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 
 	background-color: $color-green-200;
 	color: $color-grey-900;
@@ -28,7 +28,11 @@ textarea,
 	border: none;
 	border-radius: rem(4);
 
-    padding: rem(8) rem(12);
+	padding: rem(8) rem(12);
 
 	@include outline;
+
+	&:focus {
+		outline-color: $color-green-600;
+	}
 }
