@@ -12,7 +12,10 @@
 	flex-direction: column;
 	gap: rem(24);
 
+	transition: height $transition-fast;
+
 	@include mobile {
+		margin: rem(50) 0;
 		width: rem(350);
 	}
 
@@ -68,6 +71,9 @@
 		display: flex;
 		align-items: center;
 		gap: rem(8);
+		cursor: pointer;
+
+		transition: all $transition-fast;
 
 		@include mobile {
 			width: 100%;
@@ -75,6 +81,13 @@
 
 		input {
 			outline: none;
+		}
+		&:not(:has(input:checked)) {
+			background-color: #fff;
+		}
+		&:has(input:checked) {
+			outline-color: $color-green-600;
+			background-color: $color-green-200;
 		}
 	}
 	&__message {
@@ -92,6 +105,14 @@
 		display: flex;
 		align-items: center;
 		gap: rem(12);
+
+		input {
+			outline: none;
+
+			&:checked {
+				accent-color: $color-green-600;
+			}
+		}
 	}
 	&__button-submit {
 		background-color: $color-green-600;
@@ -99,5 +120,22 @@
 
 		padding: rem(12) 0;
 		border-radius: rem(8);
+
+		transition: background-color $transition-fast;
+
+		@include hover {
+			background-color: rgb(12, 70, 59);
+		}
+	}
+}
+
+.error__label {
+	color: $color-red;
+	font-size: rem(14);
+
+	display: none;
+
+	&.active {
+		display: block;
 	}
 }
