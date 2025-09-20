@@ -1,0 +1,103 @@
+@use '../variables' as *;
+@use '../helpers/' as *;
+
+.form {
+	background-color: $color-white;
+	padding: rem(24);
+	border-radius: rem(18);
+
+	font-size: rem(16);
+
+	display: flex;
+	flex-direction: column;
+	gap: rem(24);
+
+	@include mobile {
+		width: rem(350);
+	}
+
+	&__title {
+		font-weight: $font-weight-bold;
+		font-size: rem(28);
+	}
+	&__names {
+		@include flex-row;
+
+		gap: rem(12);
+
+		@include mobile {
+			flex-direction: column;
+		}
+	}
+	&__first-name {
+		@include flex-column;
+
+		gap: rem(8);
+	}
+	&__last-name {
+		@include flex-column;
+
+		gap: rem(8);
+	}
+	&__email {
+		@include flex-column;
+
+		gap: rem(8);
+	}
+	&__type {
+		@include flex-column;
+
+		position: relative;
+		gap: rem(12);
+	}
+	&__type-list {
+		@include flex-row;
+		justify-content: space-between;
+
+		@include mobile {
+			flex-direction: column;
+			gap: rem(18);
+		}
+	}
+	&__type-item {
+		@include outline;
+
+		width: 100%;
+		position: relative;
+		width: rem(205);
+		display: flex;
+		align-items: center;
+		gap: rem(8);
+
+		@include mobile {
+			width: 100%;
+		}
+
+		input {
+			outline: none;
+		}
+	}
+	&__message {
+		@include flex-column;
+
+		gap: rem(8);
+		min-height: rem(100);
+		resize: none;
+
+		@include mobile {
+			min-height: rem(200);
+		}
+	}
+	&__agreement {
+		display: flex;
+		align-items: center;
+		gap: rem(12);
+	}
+	&__button-submit {
+		background-color: $color-green-600;
+		color: $color-white;
+
+		padding: rem(12) 0;
+		border-radius: rem(8);
+	}
+}

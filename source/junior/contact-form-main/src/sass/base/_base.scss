@@ -1,0 +1,34 @@
+@use '../variables' as *;
+@use '../helpers/' as *;
+
+html {
+	font-size: 62.5%; /* 1rem = 10px */
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+
+	background-color: $color-green-200;
+	color: $color-grey-900;
+
+	font-family: $font-family-base;
+	font-weight: $font-weight-normal;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input,
+textarea,
+.form__type-item {
+	border: none;
+	border-radius: rem(4);
+
+    padding: rem(8) rem(12);
+
+	@include outline;
+}
