@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import path from 'path'
 
 export default defineConfig({
-	base: 'My-practices-in-the-frontend-mentor/demo/junior/contact-form-main/',
+	base: 'My-practices-in-the-frontend-mentor/demo/junior/contact-form-main-demo/',
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
