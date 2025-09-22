@@ -19,6 +19,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 5 | Four Card Feature Section        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/four-card-feature-section-master/) |
 | 6 | Article Preview Component        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/article-preview-component-master/) |
 | 6 | Intetactive Raiting Card         | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/intetactive-raiting-card-demo/) |
+| 7 | Faq Accordion                    | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/faq-accordion-main-demo/)
 
 ## Level: junior
 
@@ -34,4 +35,5 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | № | Name                            | Technologies        | Live Demo Link |
 |---|----------------------------------|----------------------|----------------|
 | 1 | Space Tourism Website | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo)
+
 
