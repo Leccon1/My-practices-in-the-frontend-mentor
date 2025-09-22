@@ -1,3 +1,12 @@
 @use '../variables' as *;
 
+.page {
+	max-width: $container-max-width;
+	margin: 0 auto;
 
+	background-color: $color-white;
+	color: $color-black;
+
+	display: flex;
+	flex-direction: column;
+}
