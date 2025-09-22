@@ -1,0 +1,27 @@
+@use '../variables' as *;
+@use '../helpers/' as *;
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+
+	margin-bottom: rem(30);
+}
+.nav {
+	&__link-list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: rem(24);
+	}
+	&__link {
+		color: $color-dark-greyish-blue;
+		transition: color $transition-fast;
+
+		.nav__item:hover & {
+			color: $color-soft-red;
+		}
+	}
+}
