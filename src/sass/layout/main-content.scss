@@ -7,4 +7,10 @@
 	grid-template-rows: repeat(3, 1fr);
 	grid-column-gap: 24px;
 	grid-row-gap: 24px;
+
+	@include mobile {
+		display: flex;
+		flex-direction: column;
+		gap: rem(50);
+	}
 }

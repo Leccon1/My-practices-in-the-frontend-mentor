@@ -12,6 +12,10 @@
 	&__content {
 		display: flex;
 		flex-direction: row;
+
+		@include mobile {
+			flex-direction: column;
+		}
 	}
 	&__title {
 		flex: 1;

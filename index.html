@@ -42,10 +42,16 @@
 
 			<main class="main">
 				<article class="hero">
-					<img
-						src="./src/assets/images/image-web-3-desktop.jpg"
-						alt="Illustrative image of a person holding a tablet with a futuristic interface"
-					/>
+					<picture>
+						<source
+							srcset="./src/assets/images/image-web-3-mobile.jpg"
+							media="(max-width: 768px)"
+						/>
+						<img
+							src="./src/assets/images/image-web-3-desktop.jpg"
+							alt="Illustrative image of a person holding a tablet with a futuristic interface"
+						/>
+					</picture>
 					<div class="hero__content">
 						<h1 class="hero__title">The Bright Future of Web 3.0?</h1>
 						<div class="hero__description">
