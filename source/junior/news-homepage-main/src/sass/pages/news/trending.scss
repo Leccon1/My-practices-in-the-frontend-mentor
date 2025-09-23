@@ -1,0 +1,59 @@
+@use '@styles/variables' as *;
+@use '@styles/helpers/' as *;
+
+.trending {
+	grid-area: 3 / 1 / 4 / 4;
+	margin-top: rem(35);
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 24px;
+
+		@include mobile {
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: column;
+			gap: rem(24);
+		}
+	}
+	&__item {
+	}
+}
+.trend-card {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	gap: rem(18);
+
+	@include mobile {
+		justify-content: normal;
+	}
+
+	& img {
+		width: 30%;
+	}
+
+	&__number {
+		color: $color-soft-red;
+		font-size: rem(24);
+		font-weight: $font-weight-bold;
+	}
+	&__title {
+		font-weight: $font-weight-bold;
+		transition: color $transition-fast;
+
+		@include hover {
+			color: $color-soft-red;
+		}
+	}
+	&__description {
+	}
+}
+.trend {
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: rem(6);
+	}
+}

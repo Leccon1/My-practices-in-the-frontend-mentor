@@ -5,4 +5,9 @@
 @use './base/normalized';
 @use './base/utilites';
 
-// далее block, components, pages и так далее
+@use './layout/header.scss';
+@use './layout/main-content.scss';
+
+@use './pages/news/hero.scss';
+@use './pages/news/news.scss';
+@use './pages/news/trending.scss';

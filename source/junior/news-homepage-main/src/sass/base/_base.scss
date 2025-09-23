@@ -1,3 +1,20 @@
 @use '../variables' as *;
+@use '../helpers/' as *;
 
+.page {
+	max-width: $container-max-width;
+	margin: rem(50) auto;
 
+	background-color: $color-white;
+	color: $color-very-dark-blue;
+
+	font-family: $font-family-base;
+
+	display: flex;
+	flex-direction: column;
+
+	@include mobile {
+        margin-top: rem(35);
+		padding: 0 rem(16);
+	}
+}
