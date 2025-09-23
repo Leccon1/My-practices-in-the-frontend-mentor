@@ -1,16 +1,51 @@
 @use '@styles/variables' as *;
 @use '@styles/helpers/' as *;
 
-.main {
-	&__hero {
-        
-	}
-}
 .hero {
-	&__title {
+	grid-area: 1/1/3/3;
+
+	display: flex;
+	flex-direction: column;
+	gap: rem(20);
+
+	&__content {
+		display: flex;
+		flex-direction: row;
 	}
-	&__text {
+	&__title {
+		flex: 1;
+
+		font-weight: $font-weight-bold;
+		font-size: rem(42);
+	}
+	&__description {
+		flex: 1;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: rem(20);
+
+		& p {
+			font-size: rem(15);
+		}
 	}
 	&__button {
+		background-color: $color-soft-red;
+		color: $color-very-dark-blue;
+
+		font-weight: $font-weight-bold;
+		font-size: rem(15);
+
+		text-transform: uppercase;
+		letter-spacing: rem(2);
+		padding: rem(8) rem(18);
+
+		transition: background-color $transition-fast, color $transition-fast;
+
+		@include hover {
+			background-color: $color-very-dark-blue;
+			color: $color-white;
+		}
 	}
 }
