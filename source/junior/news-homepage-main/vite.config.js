@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import path, { resolve } from 'path' // нужен для build rollup
 
 export default defineConfig({
-	base: 'My-practices-in-the-frontend-mentor/demo/junior/news-homepage-main',
+	base: 'My-practices-in-the-frontend-mentor/demo/junior/news-homepage-main-demo/',
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
