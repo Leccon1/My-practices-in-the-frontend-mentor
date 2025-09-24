@@ -110,4 +110,8 @@
 	&__item.active {
 		gap: rem(25);
 	}
+
+	&__item.active .faq__answer {
+		max-height: rem(200);
+	}
 }
