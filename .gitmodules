@@ -16,3 +16,6 @@
 [submodule "source/intermediate/space-tourism-website-main"]
 	path = source/intermediate/space-tourism-website-main
 	url = git@github.com:Leccon1/space-tourism-website-main.git
+[submodule "source/junior/time-tracking-dashboard-main"]
+	path = source/junior/time-tracking-dashboard-main
+	url = git@github.com:Leccon1/time-tracking-dashboard-main.git
