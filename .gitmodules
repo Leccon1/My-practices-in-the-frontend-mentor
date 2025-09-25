@@ -19,3 +19,6 @@
 [submodule "source/junior/time-tracking-dashboard-main"]
 	path = source/junior/time-tracking-dashboard-main
 	url = git@github.com:Leccon1/time-tracking-dashboard-main.git
+[submodule "source/junior/tip-calculator-app-main"]
+	path = source/junior/tip-calculator-app-main
+	url = git@github.com:Leccon1/tip-calculator-app-main.git
