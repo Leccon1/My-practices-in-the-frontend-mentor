@@ -4,6 +4,9 @@ In this repository are some practices to improve my front-end skills.
 Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 ---
 
+P.S. Those folders in the source that are not marked because the submodule in them was not used by VITE
+
+---
 ## in the demo folder, there are projects in which I used vite
 
 ---
@@ -36,6 +39,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | № | Name                            | Technologies        | Live Demo Link |
 |---|----------------------------------|----------------------|----------------|
 | 1 | Space Tourism Website | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo)
+
 
 
 
