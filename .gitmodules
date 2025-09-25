@@ -7,3 +7,6 @@
 [submodule "source/junior/faq-accordion-main"]
 	path = source/junior/faq-accordion-main
 	url = git@github.com:Leccon1/faq-accordion-main.git
+[submodule "source/newbie/faq-accordion-main"]
+	path = source/newbie/faq-accordion-main
+	url = git@github.com:Leccon1/faq-accordion-main.git
