@@ -4,3 +4,6 @@
 [submodule "source/junior/contact-form-main"]
 	path = source/junior/contact-form-main
 	url = git@github.com:Leccon1/contact-form-main.git
+[submodule "source/junior/faq-accordion-main"]
+	path = source/junior/faq-accordion-main
+	url = git@github.com:Leccon1/faq-accordion-main.git
