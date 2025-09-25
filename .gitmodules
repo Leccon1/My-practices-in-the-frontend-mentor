@@ -1,3 +1,6 @@
 [submodule "source/junior/news-homepage-main"]
 	path = source/junior/news-homepage-main
 	url = git@github.com:Leccon1/news-homepage-main.git
+[submodule "source/junior/contact-form-main"]
+	path = source/junior/contact-form-main
+	url = git@github.com:Leccon1/contact-form-main.git
