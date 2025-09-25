@@ -10,3 +10,6 @@
 [submodule "source/newbie/faq-accordion-main"]
 	path = source/newbie/faq-accordion-main
 	url = git@github.com:Leccon1/faq-accordion-main.git
+[submodule "source/newbie/interactive-rating-component-main"]
+	path = source/newbie/interactive-rating-component-main
+	url = git@github.com:Leccon1/interactive-rating-component-main.git
