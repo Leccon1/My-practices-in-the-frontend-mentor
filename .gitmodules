@@ -13,3 +13,6 @@
 [submodule "source/newbie/interactive-rating-component-main"]
 	path = source/newbie/interactive-rating-component-main
 	url = git@github.com:Leccon1/interactive-rating-component-main.git
+[submodule "source/intermediate/space-tourism-website-main"]
+	path = source/intermediate/space-tourism-website-main
+	url = git@github.com:Leccon1/space-tourism-website-main.git
