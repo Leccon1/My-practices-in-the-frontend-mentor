@@ -2,11 +2,22 @@
 @use '../helpers/' as *;
 
 .header {
+	position: relative;
+
 	margin-top: rem(50);
+	padding-bottom: rem(30);
 
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		width: 100%;
+		border-bottom: 1px solid $color-grayish-blue;
+	}
 
 	&__nav-wrapper {
 		display: flex;
@@ -21,12 +32,32 @@
 		flex-direction: row;
 		gap: rem(32);
 	}
-	&__item {
-	}
 	&__link {
-		color: $color-dark-grayish-blue;
+		position: relative;
 
-		padding: rem(24) 0;
+		color: $color-dark-grayish-blue;
+		padding: 0 0 rem(46) 0;
+
+		transition: color $transition-fast;
+
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			inset: 0;
+			width: 0;
+			border-bottom: 5px solid $color-orange;
+
+			transition: width $transition-fast;
+		}
+
+		@include hover {
+			color: $color-black;
+
+			&::after {
+				width: 100%;
+			}
+		}
 	}
 }
 .header-controls {
@@ -34,6 +65,16 @@
 	gap: rem(32);
 }
 .cart-icon {
-	width: 50%;
+	@include hover {
+		filter: contrast(100);
+	}
+}
+.btn-profile {
+	width: 35%;
 	height: auto;
+	border-radius: 50%;
+
+	@include hover {
+		border: 2px solid $color-orange;
+	}
 }
