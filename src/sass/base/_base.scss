@@ -1,2 +1,21 @@
 @use '../variables' as *;
+@use '../helpers/' as *;
 
+html {
+	font-size: 62.5%; /* 1rem = 10px */
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+
+	font-family: $font-family-base;
+	font-size: rem(16);
+}
+
+.wrapper {
+	max-width: $breakpoint-xl;
+	margin: 0 auto;
+}
