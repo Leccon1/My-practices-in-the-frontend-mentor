@@ -1,0 +1,58 @@
+@use '../variables' as *;
+@use '../helpers/' as *;
+
+.product {
+	display: flex;
+	flex-direction: row;
+	gap: rem(150);
+
+	&__gallery {
+		display: flex;
+		flex-direction: column;
+		gap: rem(24);
+	}
+}
+.gallery {
+	&__main {
+		& img {
+			border-radius: 18px;
+		}
+	}
+	&__thumbnails {
+		display: flex;
+		flex-direction: row;
+		gap: rem(24);
+
+		& img {
+			border-radius: 12px;
+		}
+	}
+}
+.product-info {
+}
+.product-suptitle {
+}
+.product-title {
+}
+.product-description {
+}
+.product-price {
+}
+.product-price-new {
+}
+.product-price-new-value {
+}
+.product-price-new-discount {
+}
+.product-price-old {
+}
+.product-add {
+	&__btn {
+	}
+}
+.product-add-amount {
+	&__btn {
+	}
+	&__value {
+	}
+}
