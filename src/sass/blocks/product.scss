@@ -1,6 +1,17 @@
 @use '../variables' as *;
 @use '../helpers/' as *;
 
+.product-suptitle {
+}
+.product-title {
+}
+.product-description {
+}
+.product-price {
+}
+.product-price-new {
+}
+
 .product {
 	display: flex;
 	flex-direction: row;
@@ -10,6 +21,59 @@
 		display: flex;
 		flex-direction: column;
 		gap: rem(24);
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+
+		padding: rem(50) 0;
+	}
+	&__add {
+		margin-top: rem(20);
+
+		display: flex;
+		flex-direction: row;
+		gap: rem(24);
+	}
+	&__amount {
+		flex: 1;
+		background-color: $color-light-grayish-blue;
+		font-weight: $font-weight-bold;
+
+		display: flex;
+		align-items: center;
+		gap: rem(38);
+
+		padding: rem(10) rem(20);
+		border-radius: rem(12);
+	}
+	&__amount-btn {
+		color: $color-orange;
+
+		font-size: rem(32);
+	}
+	&__amount-value {
+	}
+	&__add-btn {
+		flex: 2;
+		position: relative;
+		background-color: $color-orange;
+
+		font-weight: $font-weight-bold;
+
+		border-radius: rem(12);
+
+		&::before {
+			content: url('@images/icon-cart.svg');
+			filter: brightness(0);
+			position: absolute;
+			inset: 0;
+			align-self: center;
+			top: 0;
+            left: rem(60);
+			width: 24px;
+			height: 24px;
+		}
 	}
 }
 .gallery {
@@ -28,31 +92,53 @@
 		}
 	}
 }
-.product-info {
-}
 .product-suptitle {
+	color: $color-dark-grayish-blue;
+
+	font-size: rem(14);
+	font-weight: $font-weight-bold;
+
+	text-transform: uppercase;
 }
 .product-title {
+	color: $color-very-dark-blue;
+
+	font-size: rem(48);
+	font-weight: $font-weight-bold;
+
+	margin: rem(14) 0 rem(40) 0;
 }
 .product-description {
+	color: $color-dark-grayish-blue;
 }
-.product-price {
-}
-.product-price-new {
-}
-.product-price-new-value {
-}
-.product-price-new-discount {
-}
-.product-price-old {
-}
-.product-add {
-	&__btn {
+.product {
+	&__price {
+		color: $color-very-dark-blue;
+
+		font-size: rem(28);
+		font-weight: $font-weight-bold;
 	}
-}
-.product-add-amount {
-	&__btn {
+	&__price-new {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		gap: rem(18);
+
+		margin: rem(18) 0 0;
 	}
-	&__value {
+	&__price-new-value {
+	}
+	&__price-new-discount {
+		color: $color-white;
+		background-color: $color-very-dark-blue;
+
+		font-size: rem(22);
+
+		padding: rem(2) rem(10);
+		border-radius: 8px;
+	}
+	&__price-old {
+		color: $color-dark-grayish-blue;
+		font-size: rem(18);
 	}
 }
