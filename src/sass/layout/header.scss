@@ -66,7 +66,7 @@
 }
 .cart-icon {
 	@include hover {
-		filter: contrast(100);
+		filter: contrast(100%);
 	}
 }
 .btn-profile {
