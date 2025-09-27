@@ -73,8 +73,11 @@
 	width: 35%;
 	height: auto;
 	border-radius: 50%;
+	border: 2px solid rgba($color: #000000, $alpha: 0);
+
+	transition: border-color $transition-fast;
 
 	@include hover {
-		border: 2px solid $color-orange;
+		border-color: $color-orange;
 	}
 }
