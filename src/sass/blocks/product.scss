@@ -96,21 +96,23 @@
 		flex-direction: row;
 		gap: rem(24);
 
-		&--current {
-			border: 2px solid $color-orange;
-			border-radius: 18px;
+		&-item {
+			& img {
+				border-radius: 12px;
+				transition: opacity $transition-fast;
 
-			& > img {
-				opacity: $opacity-low;
+				@include hover {
+					opacity: $opacity-low;
+				}
 			}
-		}
 
-		& img {
-			border-radius: 12px;
-			transition: opacity $transition-fast;
+			&--current {
+				border: 2px solid $color-orange;
+				border-radius: 18px;
 
-			@include hover {
-				opacity: $opacity-low;
+				& > img {
+					opacity: $opacity-low;
+				}
 			}
 		}
 	}
