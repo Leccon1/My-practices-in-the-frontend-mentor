@@ -70,7 +70,7 @@
 			inset: 0;
 			align-self: center;
 			top: 0;
-            left: rem(60);
+			left: rem(60);
 			width: 24px;
 			height: 24px;
 		}
@@ -83,12 +83,28 @@
 		}
 	}
 	&__thumbnails {
+		$opacity: 0.4;
+
 		display: flex;
 		flex-direction: row;
 		gap: rem(24);
 
+		&--current {
+			border: 2px solid $color-orange;
+			border-radius: 18px;
+
+			& > img {
+				opacity: $opacity;
+			}
+		}
+
 		& img {
 			border-radius: 12px;
+			transition: opacity $transition-fast;
+
+			@include hover {
+				opacity: $opacity;
+			}
 		}
 	}
 }
