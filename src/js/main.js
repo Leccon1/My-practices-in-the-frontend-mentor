@@ -20,12 +20,16 @@ const plusBtn = document.querySelector('[data-mount-plus]')
 const minusBtn = document.querySelector('[data-mount-minus]')
 const mountValue = document.querySelector('[data-mount-value ]')
 
+let mountCounter = 0
+
 plusBtn.addEventListener('click', () => {
-	mountValue.textContent = Number(mountValue.textContent) + 1
+	mountCounter += 1
+	mountValue.textContent = mountCounter.toString()
 })
 minusBtn.addEventListener('click', () => {
-	if (Number(mountValue.textContent) > 0) {
-		mountValue.textContent = Number(mountValue.textContent) - 1
+	if (mountCounter > 0) {
+		mountCounter -= 1
+		mountValue.textContent = mountCounter.toString()
 	}
 })
 
@@ -53,15 +57,15 @@ document.addEventListener('click', e => {
 function addToCart() {
 	const product = (document.createElement = `
     <div class="cart-dropdown__product">
-        <img src="./src/assets/images/image-product-1-thumbnail.jpg">
-        <div class="product__info">
-            <h3 class="product__name">Fall Limited Edition Sneakers</h3>
-            <div class="product__price">
-                <span class="product__price-new">$125.00</span>
-                <span class="product__price-old">$250.00</span>
-            </div>
-        </div>
-    </div>
+                        <img class="cart-product__img" src="./src/assets/images/image-product-1-thumbnail.jpg">
+                        <div class="cart-product__info">
+                            <h3 class="cart-product__name">Fall Limited Edition Sneakers</h3>
+                            <div class="cart-product__price">
+                                <span class="cart-product__price-example">$125.00</span>
+                                <span class="cart-product__price-sum">$250.00</span>
+                            </div>
+                        </div>
+                        <button class="cart-product__delete-btn"><img src="./src/assets/images/icon-delete.svg" alt="delete button"></button>
     `)
 	console.log(product)
 }
