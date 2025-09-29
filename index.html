@@ -44,20 +44,9 @@
 				<div class="cart-dropdown">
 					<h3 class="cart-dropdown__title">Cart</h3>
 					<hr />
-					<div class="cart-dropdown__content">
-						<!-- <p class="cart-dropdown__content-empty">Your cart is empty</p> -->
-                        <div class="cart-dropdown__product">
-                            <img class="cart-product__img" src="./src/assets/images/image-product-1-thumbnail.jpg">
-                            <div class="cart-product__info">
-                                <h3 class="cart-product__name">Fall Limited Edition Sneakers</h3>
-                                <div class="cart-product__price">
-                                    <span class="cart-product__price-example">$125.00</span>
-                                    <span class="cart-product__price-sum">$250.00</span>
-                                </div>
-                            </div>
-                            <button class="cart-product__delete-btn"><img src="./src/assets/images/icon-delete.svg" alt="delete button"></button>
-                        </div>
-						<button class="cart-dropdown__content-btn">Checkout</button>
+					<div class="cart-dropdown__content" data-dropdown-content>
+						<p class="cart-dropdown__content-empty" data-dropdown-empty>Your cart is empty</p>
+						<button class="cart-dropdown__content-btn" data-dropdown-checkBtn>Checkout</button>
 					</div>
 				</div>
 			</header>
