@@ -13,7 +13,6 @@
 
 	border-radius: 8px;
 	box-shadow: $box-shadow-lg;
-	padding: rem(24);
 
 	display: none;
 	z-index: $z-index-modal;
@@ -23,7 +22,18 @@
 	}
 
 	&__title {
-		margin-bottom: rem(24);
+		position: relative;
+
+		padding: rem(24);
+
+		&::after {
+			content: ' ';
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			border: $border-width solid $color-light-grayish-blue;
+		}
 	}
 	&__content {
 		position: relative;
@@ -32,8 +42,14 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+
+		padding: rem(24);
 	}
 	&__content-empty {
+		position: absolute;
+		inset: 0;
+		place-self: center;
+
 		color: $color-dark-grayish-blue;
 		font-weight: $font-weight-bold;
 	}
@@ -44,6 +60,14 @@
 		padding: rem(12) 0;
 		border-radius: 12px;
 
-		// display: none;
+		display: none;
+
+		&--visible {
+			display: block;
+
+			.cart-dropdown__content {
+				display: none;
+			}
+		}
 	}
 }
