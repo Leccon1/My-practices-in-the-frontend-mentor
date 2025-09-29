@@ -9,4 +9,6 @@
 @use './layout/main.scss';
 
 @use './blocks/product.scss';
-@use './blocks/profile-dropdown.scss';
+@use './blocks/cart-dropdown.scss';
+
+@use './components/cart-product.scss';
