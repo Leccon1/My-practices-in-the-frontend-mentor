@@ -33,7 +33,7 @@ const addToCartButton = document.querySelector('[data-add-cart]')
 const cartBtn = document.querySelector('.cart-icon')
 const cart = document.querySelector('.cart-dropdown')
 
-const exceptions = ['.cart-icon', '.cart-dropdown']
+const exceptions = ['.cart-icon', '.cart-dropdown', '.product__add']
 
 // закрыть корзину при клике вне ней
 cartBtn.addEventListener('click', e => {
