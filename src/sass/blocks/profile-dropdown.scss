@@ -15,7 +15,13 @@
 	box-shadow: $box-shadow-lg;
 	padding: rem(24);
 
+	display: none;
 	z-index: $z-index-modal;
+
+	&--visible {
+		display: block;
+	}
+
 	&__title {
 		margin-bottom: rem(24);
 	}
