@@ -14,48 +14,54 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
 
-.gallery {
-	&__main {
-		position: relative;
-		width: 65%;
-	}
-	&__closed {
-		filter: invert(100%);
-		float: right;
-		margin-bottom: rem(12);
+	display: none;
 
-		transform: scale(1.5);
-
-		@include hover {
-			filter: invert(56%) sepia(92%) saturate(5000%) hue-rotate(10deg)
-				brightness(100%) contrast(100%);
-		}
-	}
-	&__nav-btn {
-		width: 100%;
-
-		position: absolute;
-		inset: 0;
-		place-self: center;
-
+	&--visible {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	}
 
-		& .nav-btn-item {
-			background-color: $color-white;
-			width: rem(70);
-			height: rem(70);
-			padding: rem(24);
-			aspect-ratio: 1;
-			border-radius: 50%;
+	.gallery {
+		&__main {
+			position: relative;
+			width: 65%;
+		}
+		&__closed {
+			filter: invert(100%);
+			float: right;
+			margin-bottom: rem(12);
+
+			transform: scale(1.5);
 
 			@include hover {
-				& img {
-					filter: invert(56%) sepia(92%) saturate(5000%) hue-rotate(10deg)
-						brightness(100%) contrast(100%);
+				filter: invert(56%) sepia(92%) saturate(5000%) hue-rotate(10deg)
+					brightness(100%) contrast(100%);
+			}
+		}
+		&__nav-btn {
+			width: 100%;
+
+			position: absolute;
+			inset: 0;
+			place-self: center;
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			& .nav-btn-item {
+				background-color: $color-white;
+				width: rem(70);
+				height: rem(70);
+				padding: rem(24);
+				aspect-ratio: 1;
+				border-radius: 50%;
+
+				@include hover {
+					& img {
+						filter: invert(56%) sepia(92%) saturate(5000%) hue-rotate(10deg)
+							brightness(100%) contrast(100%);
+					}
 				}
 			}
 		}

@@ -54,8 +54,9 @@
 				<div class="product">
 					<div class="product__gallery gallery">
 						<div class="gallery__main">
-							<button aria-label="Fall Limited Edition Sneakers">
+							<button aria-label="Fall Limited Edition Sneakers" data-main-img-button>
 								<img
+                                    class="gallery__main-img"
 									data-main-img
 									src="./src/assets/images/image-product-1.jpg"
 									alt="Fall Limited Edition Sneakers"
@@ -134,16 +135,14 @@
 				</div>
 			</main>
 		</div>
-        <div class="modal">
+        <div class="modal" data-modal>
             <div class="gallery gallery--modal">
                 <div class="gallery__main">
-                    <button class="gallery__closed"><img src="./src/assets/images/icon-close.svg" alt="button close"></button>
-                    <button aria-label="Fall Limited Edition Sneakers">
-                        <img data-main-img src="./src/assets/images/image-product-1.jpg" alt="Fall Limited Edition Sneakers" />
-                    </button>
+                    <button class="gallery__closed" data-modal-closed-button><img src="./src/assets/images/icon-close.svg" alt="button close"></button>
+                        <img class="gallery--modal" data-main-img src="./src/assets/images/image-product-1.jpg" alt="Fall Limited Edition Sneakers" />
                     <div class="gallery__nav-btn">
-                        <button class="nav-btn__previous-btn nav-btn-item"><img src="./src/assets/images/icon-previous.svg" alt="button previous"></button>
-                        <button class="nav-btn__next-btn nav-btn-item"><img src="./src/assets/images/icon-next.svg" alt="button next"></button>
+                        <button class="nav-btn__previous-btn nav-btn-item" data-modal-nav-btn="left"><img src="./src/assets/images/icon-previous.svg" alt="button previous"></button>
+                        <button class="nav-btn__next-btn nav-btn-item" data-modal-nav-btn="right"><img src="./src/assets/images/icon-next.svg" alt="button next"></button>
                     </div>
                 </div>
                 <div class="gallery__thumbnails">
