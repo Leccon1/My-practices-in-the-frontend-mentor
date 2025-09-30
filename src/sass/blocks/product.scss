@@ -6,11 +6,6 @@
 	flex-direction: row;
 	gap: rem(150);
 
-	&__gallery {
-		display: flex;
-		flex-direction: column;
-		gap: rem(24);
-	}
 	&__info {
 		display: flex;
 		flex-direction: column;
@@ -75,6 +70,10 @@
 	}
 }
 .gallery {
+	display: flex;
+	flex-direction: column;
+	gap: rem(24);
+
 	&__main {
 		& img {
 			border-radius: 18px;
