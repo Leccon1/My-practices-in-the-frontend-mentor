@@ -1,6 +1,6 @@
 import '../sass/main.scss'
 
-const mainImg = document.querySelector('[data-main-img')
+const mainImages = document.querySelectorAll('[data-main-img]')
 const thumbnails = document.querySelectorAll('.gallery__thumbnails button')
 
 // Для смены класса у миниатюры
@@ -11,7 +11,9 @@ thumbnails.forEach(thumbnail => {
 		})
 		thumbnail.classList.add('gallery__thumbnails-item--current')
 
-		mainImg.src = thumbnail.dataset.mainImg
+		mainImages.forEach(mainImg => {
+			mainImg.src = thumbnail.dataset.mainImgSrc
+		})
 	})
 })
 
