@@ -76,6 +76,7 @@ const addToCartButton = document.querySelector('[data-add-cart]')
 const cartBtn = document.querySelector('.cart-icon')
 const cart = document.querySelector('.cart-dropdown')
 const dropdownDescription = cart.querySelector('[data-dropdown-empty]')
+const dropdownCheckButton = cart.querySelector('[data-dropdown-checkBtn]')
 
 // Элементы, при клике на которые корзина не закрывается
 const exceptions = ['.cart-icon', '.cart-dropdown', '.product__add']
@@ -145,6 +146,7 @@ function addToCart() {
 		removeFromCartButton.addEventListener('click', removeFromCart())
 
 		dropdownDescription.classList.add('no-display')
+		dropdownCheckButton.classList.add('display-block')
 	}
 }
 
@@ -154,6 +156,7 @@ function removeFromCart() {
 		this.closest('.cart-dropdown__product').remove()
 
 		dropdownDescription.classList.remove('no-display')
+		dropdownCheckButton.classList.remove('display-block')
 	}
 }
 
