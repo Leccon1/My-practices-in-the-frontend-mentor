@@ -87,6 +87,7 @@
 	}
 }
 .gallery {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	gap: rem(24);
@@ -121,13 +122,21 @@
 		gap: rem(24);
 
 		@include mobile {
-			display: none;
+			position: absolute;
+			bottom: 0;
+			place-self: center;
+
+			width: 50%;
 		}
 
 		&-item {
 			& img {
 				border-radius: 12px;
 				transition: opacity $transition-fast;
+
+				@include mobile {
+					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+				}
 
 				@include hover {
 					opacity: $opacity-low;
@@ -140,6 +149,10 @@
 
 				& > img {
 					opacity: $opacity-low;
+
+					@include mobile {
+						opacity: 1;
+					}
 				}
 			}
 		}
