@@ -22,3 +22,6 @@
 [submodule "source/junior/tip-calculator-app-main"]
 	path = source/junior/tip-calculator-app-main
 	url = git@github.com:Leccon1/tip-calculator-app-main.git
+[submodule "source/intermediate/ecommerce-product-page-main"]
+	path = source/intermediate/ecommerce-product-page-main
+	url = git@github.com:Leccon1/ecommerce-product-page-main.git
