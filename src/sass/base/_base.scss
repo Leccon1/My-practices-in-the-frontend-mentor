@@ -15,10 +15,16 @@ body {
 }
 
 .wrapper {
+	position: relative;
+
 	max-width: $breakpoint-xl;
 	margin: 0 auto;
 
 	&__inner {
 		margin: 0 rem(50);
+
+		@include mobile {
+			margin: 0;
+		}
 	}
 }

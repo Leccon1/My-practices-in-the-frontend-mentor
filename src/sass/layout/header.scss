@@ -3,6 +3,8 @@
 
 .header {
 	position: relative;
+	background-color: $color-white;
+	width: 100%;
 
 	margin-top: rem(50);
 	padding-bottom: rem(30);
@@ -11,12 +13,25 @@
 	align-items: center;
 	justify-content: space-between;
 
+	z-index: 1000;
+
+	@include mobile {
+		position: sticky;
+		top: 0;
+		margin-top: 0;
+		padding: rem(12) rem(24);
+	}
+
 	&::after {
 		position: absolute;
 		content: '';
 		bottom: 0;
 		width: 100%;
 		border-bottom: 1px solid $color-grayish-blue;
+
+		@include mobile {
+			display: none;
+		}
 	}
 
 	&__burger {
@@ -103,6 +118,10 @@
 .header-controls {
 	display: flex;
 	gap: rem(32);
+
+	@include mobile {
+		justify-content: end;
+	}
 }
 .cart-icon {
 	@include hover {

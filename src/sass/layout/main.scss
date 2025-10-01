@@ -2,6 +2,11 @@
 @use '../helpers/' as *;
 
 .main {
-	margin-top: fluid(80, 120, 768, 1920);
-	padding: 0 fluid(10, 65, 768, 1920);
+	margin-top: rem(120);
+	padding: 0 rem(65);
+
+	@include mobile {
+		margin-top: 0;
+		padding: 0;
+	}
 }

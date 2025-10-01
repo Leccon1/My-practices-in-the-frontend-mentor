@@ -21,6 +21,11 @@
 		display: block;
 	}
 
+	@include mobile {
+		top: 9rem;
+		right: 20px;
+	}
+
 	&__title {
 		position: relative;
 
