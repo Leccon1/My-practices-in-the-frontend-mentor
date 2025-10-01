@@ -75,6 +75,7 @@ minusBtn.addEventListener('click', () => {
 const addToCartButton = document.querySelector('[data-add-cart]')
 const cartBtn = document.querySelector('.cart-icon')
 const cart = document.querySelector('.cart-dropdown')
+const dropdownDescription = cart.querySelector('[data-dropdown-empty]')
 
 // Элементы, при клике на которые корзина не закрывается
 const exceptions = ['.cart-icon', '.cart-dropdown', '.product__add']
@@ -130,13 +131,29 @@ function addToCart() {
 						}.00</span>
           </div>
         </div>
-        <button class="cart-product__delete-btn">
+        <button data-remove-cart-product-button class="cart-product__delete-btn">
           <img src="./src/assets/images/icon-delete.svg" alt="delete button">
         </button>
       </div>
     `
 
 		dropdownContent.insertAdjacentHTML('beforeend', productHTML)
+
+		const removeFromCartButton = document.querySelector(
+			'[data-remove-cart-product-button]'
+		)
+		removeFromCartButton.addEventListener('click', removeFromCart())
+
+		dropdownDescription.classList.add('no-display')
+	}
+}
+
+// удаление товара из корзины
+function removeFromCart() {
+	return function () {
+		this.closest('.cart-dropdown__product').remove()
+
+		dropdownDescription.classList.remove('no-display')
 	}
 }
 
