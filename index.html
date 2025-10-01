@@ -8,8 +8,14 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="header">
+			<div class="wrapper__inner">
+                <header class="header">
 				<div class="header__nav-wrapper">
+                    <button class="header__burger" aria-label="Открыть меню">
+					    <span></span>
+					    <span></span>
+					    <span></span>
+				    </button>
 					<a href="">
 						<img src="./src/assets/images/logo.svg" alt="Sneakers logo" />
 					</a>
@@ -48,6 +54,7 @@
 						<button class="cart-dropdown__content-btn" data-dropdown-checkBtn>Checkout</button>
 					</div>
 				</div>
+                
 			</header>
 
 			<main class="main">
@@ -134,6 +141,8 @@
 					</div>
 				</div>
 			</main>
+
+            </div>
 		</div>
         <div class="modal" data-modal>
             <div class="gallery gallery--modal">

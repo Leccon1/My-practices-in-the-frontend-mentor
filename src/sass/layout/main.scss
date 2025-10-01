@@ -2,6 +2,6 @@
 @use '../helpers/' as *;
 
 .main {
-	margin-top: rem(120);
-	padding: 0 rem(65);
+	margin-top: fluid(80, 120, 768, 1920);
+	padding: 0 fluid(10, 65, 768, 1920);
 }

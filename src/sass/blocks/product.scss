@@ -4,7 +4,7 @@
 .product {
 	display: flex;
 	flex-direction: row;
-	gap: rem(150);
+	gap: fluid(24, 150, 768, 1920);
 
 	&__info {
 		display: flex;
@@ -18,6 +18,10 @@
 		display: flex;
 		flex-direction: row;
 		gap: rem(24);
+
+		@include laptop {
+			flex-direction: column;
+		}
 	}
 	&__amount {
 		flex: 1;
@@ -54,6 +58,10 @@
 
 		@include hover {
 			opacity: $opacity-medium;
+		}
+
+		@include laptop {
+			padding: rem(24) 0;
 		}
 
 		&::before {
@@ -116,7 +124,7 @@
 .product-title {
 	color: $color-very-dark-blue;
 
-	font-size: rem(48);
+	font-size: fluid(38, 48, 768, 1920);
 	font-weight: $font-weight-bold;
 
 	margin: rem(14) 0 rem(40) 0;

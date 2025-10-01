@@ -17,4 +17,8 @@ body {
 .wrapper {
 	max-width: $breakpoint-xl;
 	margin: 0 auto;
+
+	&__inner {
+		margin: 0 rem(50);
+	}
 }
