@@ -82,10 +82,38 @@
 		display: none;
 	}
 
+	@include mobile {
+		position: fixed;
+		background: $color-white;
+		top: 0;
+		left: -100%;
+		width: rem(340);
+		height: 100vh;
+		padding: rem(20) rem(32);
+		align-items: flex-start;
+		transition: left $transition-normal;
+
+		display: block;
+
+		&.active {
+			left: 0 !important;
+		}
+
+		&.active ~ .burger {
+			z-index: $z-index-modal;
+			transition-delay: 0.3s;
+		}
+	}
+
 	&__list {
 		display: flex;
 		flex-direction: row;
 		gap: rem(32);
+
+		@include mobile {
+			flex-direction: column;
+			margin-top: rem(100);
+		}
 	}
 	&__link {
 		position: relative;
@@ -94,6 +122,12 @@
 		padding: 0 0 rem(46) 0;
 
 		transition: color $transition-fast;
+
+		@include mobile {
+			color: $color-very-dark-blue;
+			font-weight: $font-weight-bold;
+			padding: 0;
+		}
 
 		&::after {
 			position: absolute;
@@ -104,6 +138,10 @@
 			border-bottom: 5px solid $color-orange;
 
 			transition: width $transition-fast;
+
+			@include mobile {
+				display: none;
+			}
 		}
 
 		@include hover {

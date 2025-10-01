@@ -161,3 +161,13 @@ function removeFromCart() {
 function toggleCart() {
 	cart.classList.toggle('cart-dropdown--visible')
 }
+
+const nav = document.querySelector('.nav')
+const burger = document.querySelector('.header__burger')
+
+if (nav && burger) {
+	burger.addEventListener('click', () => {
+		nav.classList.toggle('active')
+		burger.classList.toggle('active')
+	})
+}
