@@ -1,0 +1,24 @@
+@use '../helpers/' as *;
+
+.nutrition {
+	&__body {
+		margin-top: 25px;
+	}
+	&__p {
+		margin-bottom: 20px;
+	}
+	.nutrition {
+		&__table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		&__line-title {
+			padding: 15px 0px 15px 20px;
+		}
+		&__line-value {
+			color: var(--Brown-800);
+			font-weight: var(--fw-semiBold);
+			padding: 15px 20px 15px 0px;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@use '../helpers/' as *;
+
+.instructions {
+	&__body {
+		margin-top: 25px;
+
+		@include hr;
+	}
+	&__list {
+		::marker {
+			color: var(--Brown-800);
+			font-family: var(--base-font);
+			font-weight: var(--fw-semiBold);
+		}
+	}
+}

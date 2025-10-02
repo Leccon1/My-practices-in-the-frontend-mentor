@@ -1,0 +1,25 @@
+@use './helpers/' as *;
+
+:root {
+	--White: hsl(0, 0%, 100%);
+	--black: #000;
+
+	--Stone-100: hsl(30, 54%, 90%);
+	--Stone-150: hsl(30, 18%, 87%);
+	--Stone-600: hsl(30, 10%, 34%);
+	--Stone-900: hsl(24, 5%, 18%);
+
+	--Brown-800: hsl(14, 45%, 36%);
+
+	--Rose-800: hsl(332, 51%, 32%);
+	--Rose-50: hsl(330, 100%, 98%);
+
+	--base-font: 'Outfit';
+	--alt-font: 'YoungSerif';
+
+	--fw-bold: 700;
+	--fw-semiBold: 600;
+	--fw-regular: 400;
+
+	--transition-duration: 0.2s;
+}
