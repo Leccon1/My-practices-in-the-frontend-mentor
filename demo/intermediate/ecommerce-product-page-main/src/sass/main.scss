@@ -1,0 +1,15 @@
+@use './variables';
+
+@use './base/base';
+@use './base/fonts';
+@use './base/normalized';
+@use './base/utilites';
+
+@use './layout/header.scss';
+@use './layout/main.scss';
+
+@use './blocks/product.scss';
+@use './blocks/cart-dropdown.scss';
+@use './blocks/modal-gallery.scss';
+
+@use './components/cart-product.scss';

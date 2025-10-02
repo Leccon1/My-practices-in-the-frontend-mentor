@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Frontend Mentor | E-commerce product page</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="wrapper__inner">
+				<header class="header">
+					<div class="header__nav-wrapper">
+						<button class="header__burger" aria-label="Open menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<a href="/">
+							<img src="/src/assets/images/logo.svg" alt="Sneakers logo" />
+						</a>
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#" class="nav__link">Collections</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Men</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Women</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">About</a>
+								</li>
+								<li class="nav__item">
+									<a href="#" class="nav__link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header-controls">
+						<button data-cart class="cart-icon" aria-label="Cart">
+							<img src="/src/assets/images/icon-cart.svg" alt="" />
+						</button>
+						<button class="btn-profile" aria-label="Profile">
+							<img src="/src/assets/images/image-avatar.png" alt="avatar men" />
+						</button>
+					</div>
+					<div class="cart-dropdown">
+						<h3 class="cart-dropdown__title">Cart</h3>
+						<div class="cart-dropdown__content" data-dropdown-content>
+							<p class="cart-dropdown__content-empty" data-dropdown-empty>Your cart is empty</p>
+							<button class="cart-dropdown__content-btn" data-dropdown-checkBtn>Checkout</button>
+						</div>
+					</div>
+					
+				</header>
+
+				<main class="main">
+					<div class="product">
+						<div class="product__gallery gallery">
+							<div class="gallery__main">
+								<button aria-label="Fall Limited Edition Sneakers" data-main-img-button>
+									<img
+										class="gallery__main-img"
+										data-main-img
+										src="./public/images/image-product-1.jpg"
+										alt="Fall Limited Edition Sneakers"
+									/>
+								</button>
+							</div>
+							<div class="gallery__thumbnails">
+								<button
+									class="gallery__thumbnails-item gallery__thumbnails-item--current"
+									aria-label="Fall Limited Edition Sneakers thumbnail"
+									data-main-img-src="./images/image-product-1.jpg"
+								>
+									<img
+										src="/src/assets/images/image-product-1-thumbnail.jpg"
+										alt="Fall Limited Edition Sneakers thumbnail"
+										data-main-img-src="/assets/images/image-product-1.jpg"
+									/>
+								</button>
+								<button
+									class="gallery__thumbnails-item"
+									aria-label="Fall Limited Edition Sneakers thumbnail"
+									data-main-img-src="./images/image-product-2.jpg"
+								>
+									<img
+										src="/src/assets/images/image-product-2-thumbnail.jpg"
+										alt="Fall Limited Edition Sneakers thumbnail"
+										data-main-img-src="/assets/images/image-product-2.jpg"
+									/>
+								</button>
+								<button
+									class="gallery__thumbnails-item"
+									aria-label="Fall Limited Edition Sneakers thumbnail"
+									data-main-img-src="./images/image-product-3.jpg"
+								>
+									<img
+										src="/src/assets/images/image-product-3-thumbnail.jpg"
+										alt="Fall Limited Edition Sneakers thumbnail"
+										data-main-img-src="/assets/images/image-product-3.jpg"
+									/>
+								</button>
+								<button
+									class="gallery__thumbnails-item"
+									aria-label="Fall Limited Edition Sneakers thumbnail"
+									data-main-img-src="./images/image-product-4.jpg"
+								>
+									<img
+										src="/src/assets/images/image-product-4-thumbnail.jpg"
+										alt="Fall Limited Edition Sneakers thumbnail"
+										data-main-img-src="/assets/images/image-product-4.jpg"
+									/>
+							</div>
+						</div>
+						<div class="product__info">
+							<p class="product-suptitle">Sneaker Company</p>
+							<h1 class="product-title">Fall Limited Edition Sneakers</h1>
+							<p class="product-description">
+								These low-profile sneakers are your perfect casual wear companion.
+								Featuring a durable rubber outer sole, they'll withstand
+								everything the weather can offer.
+							</p>
+							<div class="product__price">
+								<div class="product__price-new">
+									<span class="product__price-new-value">$125.00</span>
+									<span class="product__price-new-discount">50%</span>
+								</div>
+								<s class="product__price-old">$250.00</s>
+							</div>
+							<div class="product__add">
+								<div class="product__amount">
+									<button data-mount-minus class="product__amount-btn">-</button>
+									<span data-mount-value class="product__amount-value">0</span>
+									<button data-mount-plus class="product__amount-btn">+</button>
+								</div>
+								<button data-add-cart class="product__add-btn">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</main>
+
+				<div class="modal" data-modal>
+					<div class="gallery gallery--modal">
+						<div class="gallery__main">
+							<button class="gallery__closed" data-modal-closed-button><img src="/src/assets/images/icon-close.svg" alt="button close"></button>
+								<img class="gallery--modal" data-main-img src="./images/image-product-1.jpg" alt="Fall Limited Edition Sneakers" />
+							<div class="gallery__nav-btn">
+								<button class="nav-btn__previous-btn nav-btn-item" data-modal-nav-btn="left"><img src="/src/assets/images/icon-previous.svg" alt="button previous"></button>
+								<button class="nav-btn__next-btn nav-btn-item" data-modal-nav-btn="right"><img src="/src/assets/images/icon-next.svg" alt="button next"></button>
+							</div>
+						</div>
+						<div class="gallery__thumbnails">
+							<button class="gallery__thumbnails-item gallery__thumbnails-item--current" aria-label="Fall Limited Edition Sneakers thumbnail" data-main-img-src="./images/image-product-1.jpg">
+								<img src="/src/assets/images/image-product-1-thumbnail.jpg" alt="Fall Limited Edition Sneakers thumbnail" data-main-img-src="/src/assets/images/image-product-1.jpg" />
+							</button>
+							<button class="gallery__thumbnails-item" aria-label="Fall Limited Edition Sneakers thumbnail" data-main-img-src="./images/image-product-2.jpg">
+								<img src="/src/assets/images/image-product-2-thumbnail.jpg" alt="Fall Limited Edition Sneakers thumbnail" data-main-img-src="/src/assets/images/image-product-2.jpg" />
+							</button>
+							<button class="gallery__thumbnails-item" aria-label="Fall Limited Edition Sneakers thumbnail" data-main-img-src="./images/image-product-3.jpg">
+								<img src="/src/assets/images/image-product-3-thumbnail.jpg" alt="Fall Limited Edition Sneakers thumbnail" data-main-img-src="/src/assets/images/image-product-3.jpg" />
+							</button>
+							<button class="gallery__thumbnails-item" aria-label="Fall Limited Edition Sneakers thumbnail" data-main-img-src="./images/image-product-4.jpg">
+								<img src="/src/assets/images/image-product-4-thumbnail.jpg" alt="Fall Limited Edition Sneakers thumbnail" data-main-img-src="/src/assets/images/image-product-4.jpg" />
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="/src/js/main.js"></script>
+	</body>
+</html>
+
+
