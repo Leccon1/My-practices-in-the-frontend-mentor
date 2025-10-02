@@ -4,39 +4,36 @@ In this repository are some practices to improve my front-end skills.
 Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 ---
 
-## in the demo folder, there are projects in which I used vite
+## in the demo folder, there are projects in which I used Vite
 
 ---
 
 ## Level: newbie
 
-| № | Name                              | Technologies    | Live Demo Link |
-|---|-----------------------------------|------------------|----------------|
-| 1 | Blog Preview Card                | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/blog-preview-card/) |
-| 2 | Social Links Profile Main        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/social-links-profile-main/) |
-| 3 | Recipe Page Main                 | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/recipe-page-main/) |
-| 4 | Product Preview Card Component   | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/product-preview-card-component-main/) |
-| 5 | Four Card Feature Section        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/four-card-feature-section-master/) |
-| 6 | Article Preview Component        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/article-preview-component-master/) |
-| 6 | Intetactive Raiting Card         | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/intetactive-raiting-card-demo/) |
-| 7 | Faq Accordion                    | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/faq-accordion-main-demo/)
+| № | Name                              | Technologies    | Live Demo Link | GitHub |
+|---|-----------------------------------|----------------|----------------|--------|
+| 1 | Blog Preview Card                | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/blog-preview-card/) | [GitHub](https://github.com/Leccon1/card_blog) |
+| 2 | Social Links Profile Main        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/social-links-profile-main/) | [GitHub](https://github.com/Leccon1/social-links-profile-main) |
+| 3 | Recipe Page Main                 | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/recipe-page-main/) | [GitHub](https://github.com/Leccon1/recipe-page-main) |
+| 4 | Product Preview Card Component   | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/product-preview-card-component-main/) | [GitHub](https://github.com/Leccon1/product-preview-card-component-main) |
+| 5 | Four Card Feature Section        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/four-card-feature-section-master/) | [GitHub](https://github.com/Leccon1/four-card-feature-section-master) |
+| 6 | Article Preview Component        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/article-preview-component-master/) | [GitHub](https://github.com/Leccon1/article-preview-component-master) |
+| 7 | Interactive Rating Card          | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/intetactive-raiting-card-demo/) | [GitHub](https://github.com/Leccon1/intetactive-raiting-card) |
+| 8 | Faq Accordion                    | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/faq-accordion-main-demo/) | [GitHub](https://github.com/Leccon1/faq-accordion-main) |
 
 ## Level: junior
 
-| № | Name                            | Technologies        | Live Demo Link |
-|---|----------------------------------|----------------------|----------------|
-| 1 | Testimonials Grid Section Main  | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/junior/testimonials-grid-section-main/) |
-| 2 | Newsletter Sign‑Up w/ Success   | SCSS, JS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/junior/newsletter-sign-up-with-success-message-main/) |
-| 3 | Time Tracking Dashboard         | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/time-tracking-dashboard-main-demo/) |
-| 4 | Tip Calculator App              | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/tip-calculator-app-main-demo) |
-| 5 | Contact Form                    | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/contact-form-main-demo/)
-| 6 | News Homepage                   | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/news-homepage-main-demo/)
+| № | Name                            | Technologies        | Live Demo Link | GitHub |
+|---|---------------------------------|-------------------|----------------|--------|
+| 1 | Testimonials Grid Section Main  | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/junior/testimonials-grid-section-main/) | [GitHub](https://github.com/Leccon1/testimonials-grid-section-main) |
+| 2 | Newsletter Sign‑Up w/ Success   | SCSS, JS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/junior/newsletter-sign-up-with-success-message-main/) | [GitHub](https://github.com/Leccon1/newsletter-sign-up-with-success-message-main) |
+| 3 | Time Tracking Dashboard         | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/time-tracking-dashboard-main-demo/) | [GitHub](https://github.com/Leccon1/time-tracking-dashboard-main) |
+| 4 | Tip Calculator App              | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/tip-calculator-app-main-demo) | [GitHub](https://github.com/Leccon1/tip-calculator-app-main) |
+| 5 | Contact Form                    | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/contact-form-main-demo/) | [GitHub](https://github.com/Leccon1/contact-form-main) |
+| 6 | News Homepage                   | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/news-homepage-main-demo/) | [GitHub](https://github.com/Leccon1/news-homepage-main) |
+
 ## Level: intermediate
 
-| № | Name                            | Technologies        | Live Demo Link |
-|---|----------------------------------|----------------------|----------------|
-| 1 | Space Tourism Website | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo)
-
-
-
-
+| № | Name                            | Technologies        | Live Demo Link | GitHub |
+|---|---------------------------------|-------------------|----------------|--------|
+| 1 | Space Tourism Website | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/) | [GitHub](https://github.com/Leccon1/space-tourism-website-main) |
