@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<link rel="stylesheet" href="./src/styles/css/main.css" />
+
+		<title>
+			Frontend Mentor | Newsletter sign-up form with success message
+		</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<div id="card" class="card">
+				<picture>
+					<source
+						srcset="./src/assets/images/illustration-sign-up-mobile.svg"
+						media="(max-width: 768px)"
+						class="card-img"
+					/>
+					<source
+						srcset="./src/assets/images/illustration-sign-up-tablet.svg"
+						media="(max-width: 1023px)"
+					/>
+					<img
+						src="./src/./assets/images/illustration-sign-up-desktop.svg"
+						alt="illustration"
+					/>
+				</picture>
+				<div class="card__content">
+					<h1 class="card__content-title title">Stay updated!</h1>
+					<p class="card__content-description">
+						Join 60,000+ product managers receiving monthly updates on:
+					</p>
+					<ul class="card__content-list">
+						<li class="card__content-item">
+							Product discovery and building what matters
+						</li>
+						<li class="card__content-item">
+							Measuring to ensure updates are a success
+						</li>
+						<li class="card__content-item">And much more!</li>
+					</ul>
+					<form class="form" id="form">
+						<label class="form-label" for="email">Email address</label>
+						<input
+							class="form-input"
+							type="email"
+							id="email"
+							name="email"
+							placeholder="email@company.com"
+							autocomplete="email"
+						/>
+						<p id="textError" class="form-label-error">Valid email required</p>
+						<button type="submit" class="form-button" id="linkBtn">
+							Subscribe to monthly newsletter
+						</button>
+					</form>
+				</div>
+				<!-- <picture>
+					<source
+						srcset="./images/image-product-mobile.jpg"
+						media="(max-width: 660px)"
+					/>
+					<img
+						src="./images/image-product-desktop.jpg"
+						alt="Parfum"
+						class="card__img"
+					/>
+				</picture> -->
+			</div>
+			<div id="cardSuccess" class="card-success">
+				<div class="card-success__content">
+					<img
+						src="./src/assets/images/icon-list.svg"
+						alt="icon-list"
+						class="card-success__content-img"
+					/>
+					<h1 class="card-success__content-title title">
+						Thanks for subscribing!
+					</h1>
+					<p class="card-success__content-description">
+						A confirmation email has been sent to
+						<span
+							class="card-success__content-description--email"
+							id="userEmail"
+							>ash@loremcompany.com.</span
+						>
+						Please open it and click the button inside to confirm your
+						subscription.
+					</p>
+					<button id="closeBtn" class="card-success__content-button">
+						Dismiss message
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="./src/js/main.js"></script>
+	</body>
+</html>
