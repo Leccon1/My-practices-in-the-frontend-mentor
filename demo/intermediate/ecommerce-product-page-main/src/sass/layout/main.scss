@@ -1,0 +1,12 @@
+@use '../variables' as *;
+@use '../helpers/' as *;
+
+.main {
+	margin-top: rem(120);
+	padding: 0 rem(65);
+
+	@include mobile {
+		margin-top: 0;
+		padding: 0;
+	}
+}
