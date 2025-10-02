@@ -13,7 +13,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | № | Name                              | Technologies    | Live Demo Link | GitHub |
 |---|-----------------------------------|----------------|----------------|--------|
 | 1 | Blog Preview Card                | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/blog-preview-card/) | [GitHub](https://github.com/Leccon1/card_blog) |
-| 2 | Social Links Profile Main        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/social-links-profile-main/) | [GitHub](https://github.com/Leccon1/social-links-profile-main) |
+| 2 | Social Links Profile Main        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/social-links-profile-main/) | [GitHub](https://github.com/Leccon1/social-link) |
 | 3 | Recipe Page Main                 | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/recipe-page-main/) | [GitHub](https://github.com/Leccon1/recipe-page-main) |
 | 4 | Product Preview Card Component   | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/product-preview-card-component-main/) | [GitHub](https://github.com/Leccon1/product-preview-card-component-main) |
 | 5 | Four Card Feature Section        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/four-card-feature-section-master/) | [GitHub](https://github.com/Leccon1/four-card-feature-section-master) |
@@ -37,3 +37,4 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | № | Name                            | Technologies        | Live Demo Link | GitHub |
 |---|---------------------------------|-------------------|----------------|--------|
 | 1 | Space Tourism Website | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/) | [GitHub](https://github.com/Leccon1/space-tourism-website-main) |
+
