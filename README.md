@@ -20,6 +20,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 6 | Article Preview Component        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/article-preview-component-master/) | [GitHub](https://github.com/Leccon1/article-preview-component-master) |
 | 7 | Interactive Rating Card          | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/interactive-rating-component-main-demo/) | [GitHub](https://github.com/Leccon1/intetactive-raiting-card) |
 | 8 | Faq Accordion                    | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/faq-accordion-main-demo/) | [GitHub](https://github.com/Leccon1/faq-accordion-main) |
+| 9 | NFT Preview Card                 | SCSS, VITE, Stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/nft-preview-card-component-main-demo/) | [GitHub](https://github.com/Leccon1/NFT-Preview-Card-)
 
 ## Level: junior
 
@@ -38,6 +39,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 |---|---------------------------------|-------------------|----------------|--------|
 | 1 | Space Tourism Website | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/) | [GitHub](https://github.com/Leccon1/space-tourism-website-main) |
 | 2 | Ecommerce Product Page | SCSS< JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/ecommerce-product-page-main-demo/) | [GitHub](https://github.com/Leccon1/ecommerce-product-page-main)
+
 
 
 
