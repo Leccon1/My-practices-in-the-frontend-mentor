@@ -32,6 +32,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 4 | Tip Calculator App              | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/tip-calculator-app-main-demo) | [GitHub](https://github.com/Leccon1/tip-calculator-app-main) |
 | 5 | Contact Form                    | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/contact-form-main-demo/) | [GitHub](https://github.com/Leccon1/contact-form-main) |
 | 6 | News Homepage                   | SCSS, JS, VITE | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/news-homepage-main-demo/) | [GitHub](https://github.com/Leccon1/news-homepage-main) |
+| 7 | Loopstudios-landing-page        | SCSS, JS, VITE, Stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/junior/loopstudios-landing-page-demo/) | [GitHub](https://github.com/Leccon1/Loopstudios-landing-page)
 
 ## Level: intermediate
 
@@ -39,6 +40,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 |---|---------------------------------|-------------------|----------------|--------|
 | 1 | Space Tourism Website | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/) | [GitHub](https://github.com/Leccon1/space-tourism-website-main) |
 | 2 | Ecommerce Product Page | SCSS< JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/ecommerce-product-page-main-demo/) | [GitHub](https://github.com/Leccon1/ecommerce-product-page-main)
+
 
 
 
