@@ -16,7 +16,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 2 | Social Links Profile Main        | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/social-links-profile-main/) | [GitHub](https://github.com/Leccon1/social-link) |
 | 3 | Recipe Page Main                 | SCSS | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/recipe-page-main/) | [GitHub](https://github.com/Leccon1/recipe-page-main) |
 | 4 | Product Preview Card Component   | SCSS, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/product-preview-card-component-main/) | [GitHub](https://github.com/Leccon1/product-preview-card-component-main) |
-| 5 | Four Card Feature Section        | SCSS, | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/source/newbie/four-card-feature-section-master/) | [GitHub](https://github.com/Leccon1/four-card-feature-section-master) |
+| 5 | Four Card Feature Section        | SCSS, | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/four-card-feature-section-master/) | [GitHub](https://github.com/Leccon1/four-card-feature-section-master) |
 | 6 | Article Preview Component        | SCSS, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/article-preview-component-master/) | [GitHub](https://github.com/Leccon1/article-preview-component-master) |
 | 7 | Interactive Rating Card          | SCSS, JS, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/interactive-rating-component-main-demo/) | [GitHub](https://github.com/Leccon1/intetactive-raiting-card) |
 | 8 | Faq Accordion                    | SCSS, JS, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/faq-accordion-main-demo/) | [GitHub](https://github.com/Leccon1/faq-accordion-main) |
@@ -41,4 +41,5 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 1 | Space Tourism Website | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/) | [GitHub](https://github.com/Leccon1/space-tourism-website-main) |
 | 2 | Ecommerce Product Page | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/ecommerce-product-page-main-demo/) | [GitHub](https://github.com/Leccon1/ecommerce-product-page-main)
 | 3 | Room Homepage Master   | SCSS, JS logics, VITE, Adaptive, stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/room-homepage-master-demo/) | [GitHub](https://github.com/Leccon1/room-homepage-master)
+
 
