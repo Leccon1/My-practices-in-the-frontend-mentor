@@ -1,4 +1,4 @@
-<img width="160" height="155" alt="image" src="https://github.com/user-attachments/assets/cefde1db-4348-4837-a000-eabf7aa57c1a" /># my-practices-in-the-frontend-mentor
+# my-practices-in-the-frontend-mentor
 In this repository are some practices to improve my front-end skills.
 
 Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
@@ -41,3 +41,4 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 1 | Space Tourism Website | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/) | [GitHub](https://github.com/Leccon1/space-tourism-website-main) |
 | 2 | Ecommerce Product Page | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/ecommerce-product-page-main-demo/) | [GitHub](https://github.com/Leccon1/ecommerce-product-page-main)
 | 3 | Room Homepage Master   | SCSS, JS logics, VITE, Adaptive, stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/room-homepage-master-demo/) | [GitHub](https://github.com/Leccon1/room-homepage-master)
+
