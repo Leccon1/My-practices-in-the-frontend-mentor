@@ -41,5 +41,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 1 | Space Tourism Website | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/space-tourism-website-main-demo/) | [GitHub](https://github.com/Leccon1/space-tourism-website-main) |
 | 2 | Ecommerce Product Page | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/ecommerce-product-page-main-demo/) | [GitHub](https://github.com/Leccon1/ecommerce-product-page-main)
 | 3 | Room Homepage Master   | SCSS, JS logics, VITE, Adaptive, stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/room-homepage-master-demo/) | [GitHub](https://github.com/Leccon1/room-homepage-master)
+| 4 | Bookmark Landing Page  | SCSS, JS logics, VITE, Adaptive, stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/bookmark-landing-page-master-demo/) | [GitHub](https://github.com/Leccon1/bookmark-landing-page) |
+
 
 
