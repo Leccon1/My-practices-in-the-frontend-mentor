@@ -21,6 +21,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 7 | Interactive Rating Card          | SCSS, JS, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/interactive-rating-component-main-demo/) | [GitHub](https://github.com/Leccon1/intetactive-raiting-card) |
 | 8 | Faq Accordion                    | SCSS, JS, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/faq-accordion-main-demo/) | [GitHub](https://github.com/Leccon1/faq-accordion-main) |
 | 9 | NFT Preview Card                 | SCSS, VITE, Stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/nft-preview-card-component-main-demo/) | [GitHub](https://github.com/Leccon1/NFT-Preview-Card-)
+| 10 | Results Summary Component       | REACT, SCSS, Stylelint | [Live demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/newbie/results-summary-component-demo/) | [GitHub](https://github.com/Leccon1/results-summary-component)
 
 ## Level: junior
 
@@ -42,6 +43,7 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 2 | Ecommerce Product Page | SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/ecommerce-product-page-main-demo/) | [GitHub](https://github.com/Leccon1/ecommerce-product-page-main)
 | 3 | Room Homepage Master   | SCSS, JS logics, VITE, Adaptive, stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/room-homepage-master-demo/) | [GitHub](https://github.com/Leccon1/room-homepage-master)
 | 4 | Bookmark Landing Page  | SCSS, JS logics, VITE, Adaptive, stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/bookmark-landing-page-master-demo/) | [GitHub](https://github.com/Leccon1/bookmark-landing-page) |
+
 
 
 
