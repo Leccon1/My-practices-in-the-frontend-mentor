@@ -45,7 +45,8 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 | 3 | Room Homepage Master   | SCSS, JS logics, VITE, Adaptive, stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/room-homepage-master-demo/) | [GitHub](https://github.com/Leccon1/room-homepage-master)
 | 4 | Bookmark Landing Page  | SCSS, JS logics, VITE, Adaptive, stylelint | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/intermediate/bookmark-landing-page-master-demo/) | [GitHub](https://github.com/Leccon1/bookmark-landing-page) |
 
+## Level: advanced
 
-
-
-
+| № | Name                            | Technologies        | Live Demo Link | GitHub |
+|---|---------------------------------|-------------------|----------------|--------|
+| 1 | countries-api-switcher | React, SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/advanced/countries-api-switcher-demo/) | [GitHub](https://github.com/Leccon1/interactive-rating-component-main) |
