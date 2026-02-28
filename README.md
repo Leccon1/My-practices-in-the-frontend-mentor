@@ -49,4 +49,5 @@ Practices in [Frontend Mentor Website](https://www.frontendmentor.io/)
 
 | № | Name                            | Technologies        | Live Demo Link | GitHub |
 |---|---------------------------------|-------------------|----------------|--------|
-| 1 | countries-api-switcher | React, SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/advanced/countries-api-switcher-demo/) | [GitHub](https://github.com/Leccon1/interactive-rating-component-main) |
+| 1 | countries-api-switcher | React, SCSS, JS logics, VITE, Adaptive | [Live Demo](https://leccon1.github.io/My-practices-in-the-frontend-mentor/demo/advanced/countries-api-switcher-demo/) | [GitHub](https://github.com/Leccon1/countries-api-switcher) |
+
